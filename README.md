@@ -1,2 +1,1 @@
-hi im a gay dragon on the internet that codes hacks and some random side projects
-  -favnox
+this is my website hosting for code dont mind me
