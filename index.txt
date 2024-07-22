@@ -82,7 +82,7 @@
     {
         alert("you acsessed furry mode, sorry")
         let fv = document.createElement('img');
-        fv.src = "https://media.discordapp.net/attachments/1252084606102933525/1252084802438299688/furry_pfp.png?ex=6670ee57&is=666f9cd7&hm=82bb0286b70bbdfe4dadc13989b3ec7a084d585128e2cf005416edaa6240092a&=&format=webp&quality=lossless&width=259&height=266";
+        fv.src = "https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/main/image.png";
         fv.width = 80;
         fv.border = "5px";
         fv.style.borderColor = "pink";
