@@ -25,7 +25,7 @@
         t.title = whatgam;
         t.onclick = function() { op(url); };
         document.body.appendChild(t);
-            function op(url){popupWindow = window.open("about:blank", "targe=_blank", "");
+            function op(url){popupWindow = window.open("about:blank", "targe=_blank", "https://");
             popupWindow.document.write(`
             <link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/4/45/White_box_55x90.png">
             <title>‎</title>
@@ -61,7 +61,7 @@
     document.addEventListener("keydown",(event) => {const keyName = event.key;if (event.altKey && event.key === "d") 
     {
         op(prompt('dev mode, test website if:'))
-        function op(url){popupWindow = window.open("about:blank", "targe=_blank", "");
+        function op(url){popupWindow = window.open("about:blank", "targe=_blank", "https://");
             popupWindow.document.write(`
             <link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/4/45/White_box_55x90.png">
             <title>‎</title>
