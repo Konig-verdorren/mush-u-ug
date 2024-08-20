@@ -11,6 +11,65 @@
         }
     </style>
     <script>
+        function    gamhtml(title, githuburl, size, imglink) {
+        let t = document.createElement('img');
+        t.src = imglink;
+        t.width = size;
+        t.border = "5px";
+        t.style.borderColor = "red";
+        t.style.margin = "10px"
+        t.style.cursor = "pointer"
+        t.innerHTML = title;
+        t.title = title;
+        t.onclick = function() { op(githuburl); };
+        document.body.appendChild(t);
+            function op(githuburl){
+                fetch(githuburl)
+                .then(res => res.text())
+                .then((textResponse) => {
+                popupWindow = window.open("about:blank", "targe=_blank", "");
+                popupWindow.document.write(textResponse);
+  });
+        }    
+        }
+    </script>
+
+<script>
+    function popup(popuptitle, inntex, fontsiz) {
+        let ma = document.createElement('div');
+        ma.style.backgroundColor = "white";
+        ma.style.width = "400px";
+        ma.style.height = "150px";
+        ma.id = "hu";
+        ma.style.position = "absolute";
+        ma.style.left = "0";
+        ma.style.top = "0";
+        ma.innerText = popuptitle;
+
+        let tex = document.createElement('a');
+        tex.innerText = inntex;
+        tex.style.fontSize = fontsiz;
+        tex.style.position = "absolute";
+        tex.style.left = "10px";
+        tex.style.top = "50px";
+        ma.appendChild(tex);
+
+        let xbox = document.createElement('a');
+        xbox.style.backgroundColor = "red";
+        xbox.style.position = "absolute";
+        xbox.innerText = "X";
+        xbox.style.cursor = "pointer";
+        xbox.style.left = "388px";
+        xbox.onclick = () => document.body.removeChild(ma);
+        ma.appendChild(xbox);
+        document.body.appendChild(ma);
+    }
+    popup("controls", "alt+Z switches your tab to google classroom, alt+X allows you to change tab name wich only works on the aboutblanks, alt+H for more info.", 15)
+    popup("it is", "these are important to make sure u dont get caught so the website stays up longer and u dont get in trouble", 15)
+    popup("pls do","pls read these", 50);
+</script>
+
+    <script>
     
     
     function gam(whatgam, url, size, imagelink) {
@@ -25,7 +84,7 @@
         t.title = whatgam;
         t.onclick = function() { op(url); };
         document.body.appendChild(t);
-            function op(url){popupWindow = window.open("about:blank", "targe=_blank", "https://");
+            function op(url){popupWindow = window.open("about:blank", "targe=_blank", "");
             popupWindow.document.write(`
             <link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/4/45/White_box_55x90.png">
             <title>‎</title>
@@ -45,23 +104,16 @@
 
 
 
-    alert("hiii, so alt+Z switches your tab to google classroom, alt+X allows you to change allows you to change tab name alt+H for more info. have a great time gaming")
-    let til = prompt("what do you want the title to be?");
-    document.title = til;
+    
 
-    document.addEventListener("keydown",(event) => {const keyName = event.key;if (event.altKey && event.key === "x") 
-    {
-        til = prompt("new title")
-        document.title = til;
-    }})
     document.addEventListener("keydown",(event) => {const keyName = event.key;if (event.altKey && event.key === "h") 
     {
-        alert("hiii, so on go guardian they see the tab you were last on before you go to this tab all they see from this one is the title, have a great time gaming")
+        popup("moreinfo", "on gogaurdian there is 3 things for them to tell hat page ur on, in the wide view. the screen: on go gaurdian it will show the last page u were on when in the about blanks. the title: they can see the title of the about blank so u can change it to match ur screen. the icon: the icon of the page is invisible to go gaurdian and will show nothing", 13)
     }})
     document.addEventListener("keydown",(event) => {const keyName = event.key;if (event.altKey && event.key === "d") 
     {
         op(prompt('dev mode, test website if:'))
-        function op(url){popupWindow = window.open("about:blank", "targe=_blank", "https://");
+        function op(url){popupWindow = window.open("about:blank", "targe=_blank", "");
             popupWindow.document.write(`
             <link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/4/45/White_box_55x90.png">
             <title>‎</title>
@@ -113,12 +165,15 @@
     gam('doodle baseball', 'https://doodlebaseball.io/', 80, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPNFvUztUxfIwJRg_4CBaLNaqZoIctTexCog&s')
     gam('garticphone', 'https://garticphone.com/', 80, 'https://cdn-1.webcatalog.io/catalog/gartic-phone/gartic-phone-icon-filled-256.png?v=1714774459562')
     gam('grindcraft', 'https://grindcraft.fbrq.io/grindcraft/index.html', 80, 'https://static.wikia.nocookie.net/grindcraft/images/7/70/Hut.png/revision/latest/thumbnail/width/360/height/360?cb=20230806084318')
+    gam('happy wheels','https://fivenightsatfreddys3.com/happy-wheels',91, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ5pA3QwEBa-swTdKAtnSNNRZwtDA4K28ehw&s')
     gam('idle breakout', 'https://idle-breakout.github.io/', 80 ,'https://play-lh.googleusercontent.com/e5jzYTn7Mjh9Ghn-DFpVedkOlRfSOyCS2AFgXdTrADIuuUbjx6vP6r_YOM2j5m7uLQ')
     gam('inna woods', 'https://innawoods.net/', 80, 'https://androidhappy.ru/uploads/posts/2023-07/1689797463_12-1.jpg')
     gam('drive mad', 'https://www.drivemad.com/', '80', 'https://images.sftcdn.net/images/t_app-icon-m/p/236ba3fd-fcb7-4aaf-9e8d-586004294e06/201633562/drive-mad-original-game-qcx-logo')
     gam('neal.fun','https://neal.fun/', 80, 'https://static.gameloop.com/img/bd5a03e397e1a58d5b4a0643b5b5d130.png?imageMogr2/thumbnail/172.8x172.8/format/webp')
     gam('sand bloxels', 'https://sandboxels.r74n.com/', 80, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8yVbwYPNvdQCQjQFavCp8TsmzaPK6azE-TQ&s')
-    gam('happy wheels','https://fivenightsatfreddys3.com/happy-wheels',80, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ5pA3QwEBa-swTdKAtnSNNRZwtDA4K28ehw&s')
-    
+    gam('snow rider 3d', 'https://snowrider3d.com/', 80, 'https://www.merlot.org/merlot/getMaterialImage.htm?id=773417944')
+    gam('slop', 'https://slope3d.net/', 80, 'https://slope-game.github.io/rungame/slope/logo.png')
+    gam('territorial', 'https://territorial.io/', 80, "https://static.wikia.nocookie.net/territorial/images/c/cb/Territorial.io.jpg/revision/latest?cb=20210618071225")
+    gamhtml('weapon addon sandbloxles', 'https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/main/html%20game/weapons%20addon%20sandbloxles', 80, 'https://img.icons8.com/?size=512&id=QgiVYDIaXkWE&format=png')
 </script>
 </body>
