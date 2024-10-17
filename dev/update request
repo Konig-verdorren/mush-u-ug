@@ -6,53 +6,44 @@
     <link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/4/45/White_box_55x90.png">
     <title>‎</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
+        body{
+            background-image: url("https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/main/imgs/img-background.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 90vh;
         }
-        button {
-            display: inline-block;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
+        button{
+            font-size: large;
+            background-color: black;
+            color: white;    
+            border-color: darkslategrey;
+            border-radius: 15px;
+            border-width: 2px;
+            
         }
-        #typeingbox {
-            display: none; /* Hide the container */
+        button:hover{
+            background-color: rgb(64, 0, 0);
+            border-radius: 5px;
+        }
+        a{
+            font-size: 30px;
         }
     </style>
 </head>
 <body>
-    <div id="typeingbox">
-        <textarea id="area" style="font-size: 0; width: 0; height: 0;"></textarea>
-    </div>
-    <button onclick="op()">Copy code from GitHub</button>
     <script>
-        let tex = document.getElementById("area");
-        
-        function op() {
-            tex.select();
-            navigator.clipboard.writeText(tex.value)
-                .then(() => {
-                    alert("Copied the text!");
-                })
-                .catch(err => {
-                    alert("Failed to copy text: " + err);
-                });
-        }
-
-        let url = "https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/main/index.html";
-        fetch(url)
-            .then(res => res.text())
-            .then((textResponse) => {
-                tex.value = textResponse;
-            })
-            .catch(err => {
-                console.error("Failed to fetch code:", err);
+        function op(){
+            fetch("https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/refs/heads/main/index.html")
+                .then(res => res.text())
+                .then((textResponse) => {
+                    navigator.clipboard.writeText(textResponse);
             });
+            window.open("https://vscode.dev", "", "")
+        }
     </script>
-</body>
-<body>
-    <a href="mailto:jaimonjw@gmail.com?subject=website%20code%20update%20request.%20changes:&body=%20code:">send request :3</a>
+    <p><a>update request tools</a></p>
+    <p><button onclick="op()">copy code and open vscode</button></p>
+    <a href="mailto:jaimonjw@gmail.com?subject=website%20code%20update%20request.%20changes:&body=%20code:"><button>send me a request </button></a>
 </body>
 </html>
-
