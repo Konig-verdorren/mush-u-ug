@@ -1,39 +1,20 @@
 <link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/4/45/White_box_55x90.png">
 <title>‎</title>
 <head>
+    <meta liecens="this websties's code was made by the mush ug production team including:Konig-verdorren(@phavnox, jaimon williams) as head develpor, bryson patridas as backend dev, and camron wolfe as front end dev">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">  
 </head>
-<body>
-    <style>
+<body style="background-color: black">
+<style>
         body{
-            background-color: black;
+            background-image: url("https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/main/imgs/background.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
         }
-    </style>
-    <script>
-        function    gamhtml(title, githuburl, size, imglink) {
-        let t = document.createElement('img');
-        t.src = imglink;
-        t.width = size;
-        t.border = "5px";
-        t.style.borderColor = "red";
-        t.style.margin = "10px"
-        t.style.cursor = "pointer"
-        t.innerHTML = title;
-        t.title = title;
-        t.onclick = function() { op(githuburl); };
-        document.body.appendChild(t);
-            function op(githuburl){
-                fetch(githuburl)
-                .then(res => res.text())
-                .then((textResponse) => {
-                popupWindow = window.open("about:blank", "targe=_blank", "");
-                popupWindow.document.write(textResponse);
-  });
-        }    
-        }
-    </script>
-
+</style>
+<!-- functions popup -->
 <script>
     function popup(popuptitle, inntex, fontsiz) {
         let ma = document.createElement('div');
@@ -68,17 +49,40 @@
     popup("it is", "these are important to make sure u dont get caught so the website stays up longer and u dont get in trouble", 15)
     popup("pls do","pls read these", 50);
 </script>
-
-    <script>
-    
-    
-    function gam(whatgam, url, size, imagelink) {
+<!-- functions gam html -->
+<script>
+    function    gamhtml(title, githuburl, size, imglink) {
+    let t = document.createElement('img');
+    t.src = imglink;
+    t.width = size;
+    t.style.borderRadius = "35px";
+    t.border = "5px";
+    t.style.borderColor = "black";
+    t.style.margin = "10px";
+    t.style.cursor = "pointer";
+    t.innerHTML = title;
+    t.title = title;
+    t.onclick = function() { op(githuburl); };
+    document.body.appendChild(t);
+        function op(githuburl){
+            fetch(githuburl)
+            .then(res => res.text())
+            .then((textResponse) => {
+            popupWindow = window.open("about:blank", "targe=_blank", "");
+            popupWindow.document.write(textResponse);
+    });
+        }    
+        }
+</script>
+<!-- functions gam url -->
+ <script>
+        function gam(whatgam, url, size, imagelink) {
         let t = document.createElement('img');
         t.src = imagelink;
         t.width = size;
         t.border = "5px";
-        t.style.borderColor = "red";
-        t.style.margin = "10px"
+        t.style.borderRadius = "35px";
+        t.style.margin = "8px"
         t.style.cursor = "pointer"
         t.innerHTML = whatgam;
         t.title = whatgam;
@@ -101,38 +105,24 @@
             <\/script>`);
         }    
     }
-
-
-
-    
-
+ </script>
+ <!-- key binds -->
+<script>  
+    document.addEventListener("keydown",(event) => {const keyName = event.key;if (event.altKey && event.key === "a") 
+    {
+        popup("auothors", "this websties's code was made by the mush ug production team including:Konig-verdorren(@phavnox, jaimon williams) as head develpor, bryson patridas as backend dev, and camron wolfe as front end dev", 15)
+    }})  
     document.addEventListener("keydown",(event) => {const keyName = event.key;if (event.altKey && event.key === "h") 
     {
         popup("moreinfo", "on gogaurdian there is 3 things for them to tell hat page ur on, in the wide view. the screen: on go gaurdian it will show the last page u were on when in the about blanks. the title: they can see the title of the about blank so u can change it to match ur screen. the icon: the icon of the page is invisible to go gaurdian and will show nothing", 13)
     }})
     document.addEventListener("keydown",(event) => {const keyName = event.key;if (event.altKey && event.key === "d") 
     {
-        op(prompt('dev mode, test website if:'))
-        function op(url){popupWindow = window.open("about:blank", "targe=_blank", "");
-            popupWindow.document.write(`
-            <link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/4/45/White_box_55x90.png">
-            <title>‎</title>
-            <iframe src="`+url+`" style="position:fixed; top:0px; left:0px; bottom:0px; right:0px;  border:none; margin:0; padding:0; overflow:hidden; z-index:999999; width: 100%; height: 100%;"></iframe>
-            <script> 
-                document.addEventListener("keydown",(event) => {const keyName = event.key;if (event.altKey && event.key === "z") {window.location.replace("https://classroom.google.com/w/NTIzNDc0ODE5ODg4/t/all");return;}})
-                let til = prompt("what do you want the title to be?");
-                document.title = til;
-
-                document.addEventListener("keydown",(event) => {const keyName = event.key;if (event.altKey && event.key === "x") 
-                {
-                    til = prompt("new title")
-                    document.title = til;}})
-            <\/script>`);
-        }
+        popup("dev", "u have opend develepor tools", 20)
+        gamhtml()
     }})
     document.addEventListener("keydown",(event) => {const keyName = event.key;if (event.altKey && event.key === "f") 
     {
-        alert("you acsessed furry mode, sorry")
         let fv = document.createElement('img');
         fv.src = "https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/main/image.png";
         fv.width = 80;
@@ -142,11 +132,11 @@
         fv.style.cursor = "pointer"
         fv.innerHTML = "sorry no furry, bad browser";
         fv.title = "furry is cute i want to kiss";
-        fv.onclick = function() {  alert('why are you clicking the furry link'); alert('i have sent a message to my account'); alert('your about to be outed as a furry. ;3');};
+        fv.onclick = function() {popup("furry", "congrats to u ur a furry now, and also go up to ur url bar and ctrl+v and then enter quickly after in it", 20);navigator.clipboard.writeText("chrome://restart"); };
         document.body.appendChild(fv);
     }})
-    document.addEventListener("keydown",(event) => {const keyName = event.key;if (event.altKey && event.key === "z") {window.location.replace("https://classroom.google.com/w/NTIzNDc0ODE5ODg4/t/all");return;}})
 </script>
+<!-- urls -->
 <script>
     gam('armedforces.io' ,'https://armedforces.io/', 80, 'https://cdn.now.gg/apps-content/com.nowgg.h5.pub483.app51325/icon/armedforces-io.png');
     gam('useless websites', 'https://www.google.com/url?q=https%3A%2F%2Fwww.the-useless.website%2F&sa=D&sntz=1&usg=AOvVaw24-GZnYRMrIkRR0SogwVK9', 70, 'https://www.pcsteps.com/wp-content/uploads/2017/07/Useless-Websites_07.png');
@@ -156,6 +146,7 @@
     gam('color match game', 'https://color.method.ac/', 80, 'https://cdn.vox-cdn.com/thumbor/oO8nXd0jZWDAAdTMxTcKqrOaNNE=/0x0:793x450/1400x1400/filters:focal(396x225:397x226)/cdn.vox-cdn.com/uploads/chorus_asset/file/13907004/color.1419964694.jpg')
     gam('cookie clicker', 'https://eli-schwartz.github.io/cookieclicker/', 80, 'https://assets-prd.ignimgs.com/2022/11/30/cookieclicker-1669850660953.jpg')
     gam("chrome dino game", 'https://trex-runner.com/', 80, 'https://play-lh.googleusercontent.com/iiIJq5JmLFYNI1bVz4IBHyoXs508JcEzHhOgau69bnveF9Wat51-ax9LMPVOlneKwqg')
+    gam('drive mad', 'https://www.drivemad.com/', '80', 'https://images.sftcdn.net/images/t_app-icon-m/p/236ba3fd-fcb7-4aaf-9e8d-586004294e06/201633562/drive-mad-original-game-qcx-logo')
     gam("drive mad gmaes", 'https://drivemad.me/', 80, 'https://img.poki.com/cdn-cgi/image/quality=78,width=314,height=314,fit=cover,f=auto/f8a2160e52333ee0d44ec19e8ca65139.png')
     gam('eggy car', 'https://eggy-car.github.io/', 80, 'https://media.shortverse.com/media/film/e632910ec71598311b5d4e37bcb8a03f/1x6-W10=-53ba8d0ff0c649c1c47a78e77cd654a3.png')
     gam('fluid sim', 'https://paveldogreat.github.io/WebGL-Fluid-Simulation/', 80, 'https://paveldogreat.github.io/WebGL-Fluid-Simulation/logo.png')
@@ -168,7 +159,6 @@
     gam('happy wheels','https://fivenightsatfreddys3.com/happy-wheels',91, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ5pA3QwEBa-swTdKAtnSNNRZwtDA4K28ehw&s')
     gam('idle breakout', 'https://idle-breakout.github.io/', 80 ,'https://play-lh.googleusercontent.com/e5jzYTn7Mjh9Ghn-DFpVedkOlRfSOyCS2AFgXdTrADIuuUbjx6vP6r_YOM2j5m7uLQ')
     gam('inna woods', 'https://innawoods.net/', 80, 'https://androidhappy.ru/uploads/posts/2023-07/1689797463_12-1.jpg')
-    gam('drive mad', 'https://www.drivemad.com/', '80', 'https://images.sftcdn.net/images/t_app-icon-m/p/236ba3fd-fcb7-4aaf-9e8d-586004294e06/201633562/drive-mad-original-game-qcx-logo')
     gam('neal.fun','https://neal.fun/', 80, 'https://static.gameloop.com/img/bd5a03e397e1a58d5b4a0643b5b5d130.png?imageMogr2/thumbnail/172.8x172.8/format/webp')
     gam('sand bloxels', 'https://sandboxels.r74n.com/', 80, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8yVbwYPNvdQCQjQFavCp8TsmzaPK6azE-TQ&s')
     gam('snow rider 3d', 'https://snowrider3d.com/', 80, 'https://www.merlot.org/merlot/getMaterialImage.htm?id=773417944')
