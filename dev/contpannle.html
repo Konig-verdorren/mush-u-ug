@@ -1,0 +1,28 @@
+<!DOCTYPE html>|>|
+<html>
+    <head>
+        <title>‎</title>
+        <link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/4/45/White_box_55x90.png">
+    </head>
+    <body>
+        <p><a>this is a L.I.T dev pannle to test things on chrome and os:</a></p><p><a style="color: red;">-----copy in url bar-</a> <a>just click-</a> </p>
+        <button style="color: red;" onclick="clipboard('chrome://restart/')">easy restart (no sign out) </button>
+        <p><button style="color: red;" onclick="clipboard('chrome://sync-internals/')"> sync-internals</button></p>
+        <button style="color: red;" onclick="clipboard('chrome://usb-internals/')"> usb-internals (to open usb-internals)</button>
+        <p><button style="color: red;" onclick="clipboard('chrome://crostini-installer/')">install linux </button></p>
+        <p><button style="color: red;" onclick="clipboard('chrome://notification-tester/')">notifaction tester  {just fun to play with}</button></p>
+        <p><button style="color: red;" onclick="clipboard('chrome://set-time/')">change ur divice time </button></p>
+        <p><button onclick="ifrmaetest()">iframe test</button></p>
+        <script>
+            function clipboard(nav) {
+                navigator.clipboard.writeText(nav);
+            }
+            function ifrmaetest() {
+                let popupContent = prompt("url:")
+                var popupWindow = window.open("about:blank", "targe=_blank", "");
+                    popupWindow.document.write('<iframe src="'+popupContent+'" style="position:fixed; top:0px; left:0px; bottom:0px; right:0px;  border:none; margin:0; padding:0; overflow:hidden; z-index:999999; width: 100%; height: 100%;"></iframe>');
+        
+            }
+        </script>
+    </body>
+</html>
