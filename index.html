@@ -13,19 +13,98 @@
             background-repeat: no-repeat;
             background-size: cover;
         }
+        #toptitle{
+            font-size: 100px;
+            color:rgb(135, 0, 188);
+            border-radius: 13px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 </style>
+<a id="toptitle">~~>L.I.T Mush U.G<~~</a>
+<!--style js-->
+<script>
+    let toptitle = document.getElementById("toptitle");
+    toptitle.style.backgroundImage = "linear-gradient(rgb(255, 255, 255),rgb(0,0,0))" ;
+    const today = new Date();
+    const month = today.getMonth();
+    if(month == 9){
+        let t = document.createElement('img');
+        t.style.width = "130px";
+        t.style.position = "absolute"
+        t.style.top = "10"
+        t.style.left = "10"
+        t.src = "https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/refs/heads/main/imgs/topcardSprites/hollow.png";
+        document.body.appendChild(t);
+        toptitle.style.backgroundImage = "linear-gradient(rgb(214, 93, 6),rgb(0, 0, 0))" ;
+        let b = document.createElement('img');
+        b.style.width = "130px";
+        b.style.position = "absolute"
+        b.style.top = "10"
+        b.style.right = "10"
+        b.src = "https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/refs/heads/main/imgs/topcardSprites/hollow.png";
+        document.body.appendChild(b);
+    }
+    else if(month == 11){
+        let t = document.createElement('img');
+        t.style.width = "120px";
+        t.style.position = "absolute"
+        t.style.top = "10"
+        t.style.left = "10"
+        t.src = "https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/refs/heads/main/imgs/topcardSprites/chrismaspresent.png";
+        document.body.appendChild(t);
+        let b = document.createElement('img');
+        b.style.width = "70px";
+        b.style.position = "absolute"
+        b.style.top = "0"
+        b.style.right = "10"
+        b.src = "https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/refs/heads/main/imgs/topcardSprites/chrismastree.png";
+        document.body.appendChild(b);
+        toptitle.style.backgroundImage = "linear-gradient(rgb(201, 40, 28), rgb(95, 230, 46))" ;
+    }
+    else if(month == 6){
+        toptitle.style.backgroundImage = "linear-gradient(rgb(150, 0, 0),rgb(255, 255, 255),rgb(0, 0, 150))" ;
+    }
+    else if(month == 2){
+        let toptitle = document.getElementById("toptitle");
+        let t = document.createElement('img');
+        t.style.width = "100px";
+        t.style.position = "absolute"
+        t.style.top = "10"
+        t.style.left = "10"
+        t.src = "https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/refs/heads/main/imgs/topcardSprites/eastereggbaeket.png";
+        document.body.appendChild(t);
+        toptitle.style.backgroundImage = "linear-gradient(rgb(240, 229, 110),rgb(81, 240, 124),rgb(255, 255, 255))" ;
+        let b = document.createElement('img');
+        b.style.width = "100px";
+        b.style.position = "absolute"
+        b.style.top = "10"
+        b.style.right = "10"
+        b.src = "https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/refs/heads/main/imgs/topcardSprites/eastereggbaeket.png";
+        document.body.appendChild(b);
+    }
+    else if(month == 10){
+        toptitle.style.backgroundImage = "linear-gradient(rgb(120, 0, 0),rgb(212, 98, 17),rgb(222, 194, 16))" ;
+    }
+    else if(month == 8){
+        toptitle.style.backgroundImage = "linear-gradient(rgb(122, 245, 239),rgb(136, 143, 142))"
+    }
+</script>
 <!-- functions popup -->
 <script>
     function popup(popuptitle, inntex, fontsiz) {
         let ma = document.createElement('div');
         ma.style.backgroundColor = "white";
+        ma.style.borderRadius = "20px"
         ma.style.width = "400px";
         ma.style.height = "150px";
         ma.id = "hu";
+        ma.style.margin = "15px"
         ma.style.position = "absolute";
         ma.style.left = "0";
         ma.style.top = "0";
-        ma.innerText = popuptitle;
+        ma.innerText = "_"+popuptitle;
 
         let tex = document.createElement('a');
         tex.innerText = inntex;
@@ -56,8 +135,6 @@
     t.src = imglink;
     t.width = size;
     t.style.borderRadius = "35px";
-    t.border = "5px";
-    t.style.borderColor = "black";
     t.style.margin = "10px";
     t.style.cursor = "pointer";
     t.innerHTML = title;
@@ -80,7 +157,6 @@
         let t = document.createElement('img');
         t.src = imagelink;
         t.width = size;
-        t.border = "5px";
         t.style.borderRadius = "35px";
         t.style.margin = "8px"
         t.style.cursor = "pointer"
@@ -119,19 +195,20 @@
     document.addEventListener("keydown",(event) => {const keyName = event.key;if (event.altKey && event.key === "d") 
     {
         popup("dev", "u have opend develepor tools", 20)
-        gamhtml()
+        gamhtml("contpannle for L.I.T testing", "https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/refs/heads/main/dev/contpannle.html", 80, "https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/main/dev/contpannle.png")
+        gamhtml("update request tools", "https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/refs/heads/main/dev/ur.html", 80, "https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/main/dev/ur.png")
     }})
     document.addEventListener("keydown",(event) => {const keyName = event.key;if (event.altKey && event.key === "f") 
     {
         let fv = document.createElement('img');
-        fv.src = "https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/main/image.png";
+        fv.src = "https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/main/imgs/furry.png";
         fv.width = 80;
         fv.border = "5px";
         fv.style.borderColor = "pink";
         fv.style.margin = "10px"
         fv.style.cursor = "pointer"
         fv.innerHTML = "sorry no furry, bad browser";
-        fv.title = "furry is cute i want to kiss";
+        fv.title = "furry is cute";
         fv.onclick = function() {popup("furry", "congrats to u ur a furry now, and also go up to ur url bar and ctrl+v and then enter quickly after in it", 20);navigator.clipboard.writeText("chrome://restart"); };
         document.body.appendChild(fv);
     }})
@@ -164,6 +241,7 @@
     gam('snow rider 3d', 'https://snowrider3d.com/', 80, 'https://www.merlot.org/merlot/getMaterialImage.htm?id=773417944')
     gam('slop', 'https://slope3d.net/', 80, 'https://slope-game.github.io/rungame/slope/logo.png')
     gam('territorial', 'https://territorial.io/', 80, "https://static.wikia.nocookie.net/territorial/images/c/cb/Territorial.io.jpg/revision/latest?cb=20210618071225")
+    gam('warzone(map stratigie game)', 'https://warzone.com', 80, 'https://play-lh.googleusercontent.com/6Zg2dz2eaBjEh67ySPtZarmWrgQkurdyel8VLPGB-YxaoeK_IERwDxgJdVZjSjjFk6w')
     gamhtml('weapon addon sandbloxles', 'https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/main/html%20game/weapons%20addon%20sandbloxles', 80, 'https://img.icons8.com/?size=512&id=QgiVYDIaXkWE&format=png')
 </script>
 </body>
