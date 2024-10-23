@@ -64,6 +64,21 @@
         toptitle.style.backgroundImage = "linear-gradient(rgb(201, 40, 28), rgb(95, 230, 46))" ;
     }
     else if(month == 6){
+        let toptitle = document.getElementById("toptitle");
+        let t = document.createElement('img');
+        t.style.width = "100px";
+        t.style.position = "absolute"
+        t.style.top = "10"
+        t.style.left = "10"
+        t.src = "https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/refs/heads/main/imgs/topcardSprites/fireworklunching.webp";
+        document.body.appendChild(t);
+        let b = document.createElement('img');
+        b.style.width = "100px";
+        b.style.position = "absolute"
+        b.style.top = "10"
+        b.style.right = "10"
+        b.src = "https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/refs/heads/main/imgs/topcardSprites/fireworkexpl.png";
+        document.body.appendChild(b);
         toptitle.style.backgroundImage = "linear-gradient(rgb(150, 0, 0),rgb(255, 255, 255),rgb(0, 0, 150))" ;
     }
     else if(month == 2){
@@ -85,9 +100,38 @@
         document.body.appendChild(b);
     }
     else if(month == 10){
+        let t = document.createElement('img');
+        t.style.width = "100px";
+        t.style.position = "absolute"
+        t.style.top = "10"
+        t.style.left = "10"
+        t.src = "https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/refs/heads/main/imgs/topcardSprites/turks.png";
+        document.body.appendChild(t);
+        let b = document.createElement('img');
+        b.style.width = "100px";
+        b.style.position = "absolute"
+        b.style.top = "10"
+        b.style.right = "10"
+        b.src = "https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/refs/heads/main/imgs/topcardSprites/turk.png";
+        document.body.appendChild(b);
         toptitle.style.backgroundImage = "linear-gradient(rgb(120, 0, 0),rgb(212, 98, 17),rgb(222, 194, 16))" ;
     }
     else if(month == 8){
+        let toptitle = document.getElementById("toptitle");
+        let t = document.createElement('img');
+        t.style.width = "100px";
+        t.style.position = "absolute"
+        t.style.top = "10"
+        t.style.left = "10"
+        t.src = "https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/refs/heads/main/imgs/topcardSprites/plane.png";
+        document.body.appendChild(t);
+        let b = document.createElement('img');
+        b.style.width = "100px";
+        b.style.position = "absolute"
+        b.style.top = "10"
+        b.style.right = "10"
+        b.src = "https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/refs/heads/main/imgs/topcardSprites/twintowers.png";
+        document.body.appendChild(b);
         toptitle.style.backgroundImage = "linear-gradient(rgb(122, 245, 239),rgb(136, 143, 142))"
     }
 </script>
@@ -206,6 +250,7 @@
         fv.border = "5px";
         fv.style.borderColor = "pink";
         fv.style.margin = "10px"
+        fv.style.borderRadius = "30px"
         fv.style.cursor = "pointer"
         fv.innerHTML = "sorry no furry, bad browser";
         fv.title = "furry is cute";
