@@ -168,9 +168,12 @@
         ma.appendChild(xbox);
         document.body.appendChild(ma);
     }
-    popup("controls", "alt+Z switches your tab to google classroom, alt+X allows you to change tab name wich only works on the aboutblanks, alt+H for more info.", 15)
-    popup("it is", "these are important to make sure u dont get caught so the website stays up longer and u dont get in trouble", 15)
-    popup("pls do","pls read these", 50);
+    if(localStorage.popup == null){
+        popup("controls", "alt+Z switches your tab to google classroom, alt+X allows you to change tab name wich only works on the aboutblanks, alt+H for more info.", 15)
+        popup("it is", "these are important to make sure u dont get caught so the website stays up longer and u dont get in trouble", 15)
+        popup("pls do","pls read these", 50);
+        localStorage.popup = true;
+    }
 </script>
 <!-- functions gam html -->
 <script>
@@ -231,6 +234,11 @@
     document.addEventListener("keydown",(event) => {const keyName = event.key;if (event.altKey && event.key === "a") 
     {
         popup("auothors", "this websties's code was made by the mush ug production team including:Konig-verdorren(@phavnox, jaimon williams) as head develpor, bryson patridas as backend dev, and camron wolfe as front end dev", 15)
+    }})  
+    document.addEventListener("keydown",(event) => {const keyName = event.key;if (event.altKey && event.key === "q") 
+    {
+        popup("dev", "local storage ''popup'' has been deleted")
+        localStorage.removeItem("popup");
     }})  
     document.addEventListener("keydown",(event) => {const keyName = event.key;if (event.altKey && event.key === "h") 
     {
