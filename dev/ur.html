@@ -1,5 +1,25 @@
 <!DOCTYPE html>
 <html>
+    <div id="password"></div>
+<style>
+    #password{
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: black;
+    }
+</style>
+<script>
+    let passkey = prompt("password:")
+    if(passkey == "Ω"){
+        document.getElementById("password").remove();
+    }
+    else{
+        window.open("about:blank", "targe=_blank", "");
+    }
+<\/script>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -32,6 +52,10 @@
     </style>
 </head>
 <body>
+    <div id="password"></div>
+    <script>
+        
+    </script>
     <p><a>update request tools</a></p>
     <p><button onclick="op()">copy code</button></p>
     <a href="mailto:jaimon.williams29@students.bloomcarroll.org?subject=website%20code%20update%20request.%20changes:&body=%20code:"><button>send me a request </button></a>
