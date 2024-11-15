@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<script>
+</script>
+    <head>
+        <title>‎</title>
+        <link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/4/45/White_box_55x90.png">
+        <style>
+        body{
+            background-image: linear-gradient(rgb(41, 224, 209), rgb(36, 226, 55));
+            height: auto;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        button{
+            font-size: large;
+            background-color: black;
+            color: white;    
+            border-color: darkslategrey;
+            border-radius: 15px;
+            border-width: 2px;
+            
+        }
+        button:hover{
+            background-color: rgb(64, 10, 10);
+            border-radius: 5px;
+        }
+        a{
+            font-size: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        </style>
+    </head>
+    <body>
+        <a id="jim"></a>
+        <script>
+            let jim = document.getElementById("jim");
+
+            function op(){
+            fetch("https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/refs/heads/main/dev/todolist.txt")
+            .then(res => res.text())
+            .then((textResponse) => {
+                jim.innerText = textResponse
+            });
+            setTimeout(op,100)
+        }
+        op()  
+        </script>
+    </body>
+</html>
