@@ -27,24 +27,39 @@
             justify-content: center;
             align-items: center;
         }
+        #taskbar{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 99.5%;
+            margin: 3px;
+            height: 60px;
+            background-image: radial-gradient(rgb(0, 0, 43),black);
+            border-radius: 30px;
+        }
         #forms{
             position: fixed;
             right: 0;
             bottom: 0;
-            width: 130px;
-            height: 130px;
+            width: 80px;
+            height: 80px;
         }
         </style>
     </head>
     <!-------html style------->
     <body>
         <a id="toptitle">~~>L.I.T Mush U.G<~~</a>
-        <img 
+        <div id="taskbar" style="background-color: black;">
+            <img 
             id="forms" 
-            src="https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/refs/heads/main/imgs/custome/warning.png"
+            src="https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/refs/heads/main/imgs/custome/form.png"
             onclick="openForm()"
             style ="cursor: pointer;"
-        >
+            >
+        </div>
     <!--------script style-------->
         <script>
             let toptitle = document.getElementById("toptitle");
@@ -184,6 +199,7 @@
             let t = document.createElement('img');
             t.src = imagelink;
             t.width = size;
+            t.height = size;
             t.style.borderRadius = "35px";
             t.style.margin = "8px"
             t.style.cursor = "pointer"
