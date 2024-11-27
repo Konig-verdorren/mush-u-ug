@@ -1,10 +1,17 @@
-<link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/4/45/White_box_55x90.png">
-<title>‎</title>
-<head>
-    <meta liecens="this websties's code was made by the mush ug production team including:Konig-verdorren(@phavnox, jaimon williams) as head develpor, bryson patridas as backend dev, and camron wolfe as front end dev">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> 
-    <style>
+<html>
+<!--__________________________________________boiler plate__________________________________________-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>‎</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        </head>
+
+    <!--__________________________________________style__________________________________________-->
+    <head>
+        <!---------css style-------->
+        <style>
         body{
             background-image: url("https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/main/imgs/backgrounds/background.png");
             background-position: center;
@@ -13,7 +20,7 @@
         }
         #toptitle{
             font-size: 100px;
-            color:rgb(135, 0, 188);
+            color:rgb(0, 0, 0);
             border-radius: 13px;
             display: flex;
             justify-content: center;
@@ -26,310 +33,300 @@
             width: 130px;
             height: 130px;
         }
-</style> 
-</head>
-<body style="background-color: black">
-<!--html -->
-<a id="toptitle">~~>L.I.T Mush U.G<~~</a>
+        </style>
+    </head>
+    <!-------html style------->
+    <body>
+        <a id="toptitle">~~>L.I.T Mush U.G<~~</a>
+        <img 
+            id="forms" 
+            src="https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/refs/heads/main/imgs/custome/warning.png"
+            onclick="openForm()"
+            style ="cursor: pointer;"
+        >
+    <!--------script style-------->
+        <script>
+            let toptitle = document.getElementById("toptitle");
+            toptitle.style.backgroundImage = "linear-gradient(rgb(255, 255, 255),rgb(0,0,0))" ;
+            const today = new Date();
+            const month = today.getMonth();
+            function openForm(){
+                popupWindow = window.open("about:blank", "targe=_blank", "");
+                    popupWindow.document.write(`
+                    <link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/4/45/White_box_55x90.png">
+                    <title>‎</title>
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf9hhq4ISnWDDpR5tSES0HB7JKYY6llxtD8owhwgruMSxyEYg/viewform?embedded=true" style="position:fixed; top:0px; left:0px; bottom:0px; right:0px;  border:none; margin:0; padding:0; overflow:hidden; z-index:999999; width: 100%; height: 100%;"></iframe>
+                    <script> 
+                        document.addEventListener("keydown",(event) => {const keyName = event.key;if (event.altKey && event.key === "z") {window.location.replace("https://classroom.google.com/w/NTIzNDc0ODE5ODg4/t/all");return;}})
+                        let til = prompt("what do you want the title to be?");
+                        document.title = til;
 
-<img 
-    id="forms" 
-    src="https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/refs/heads/main/imgs/custome/warning.png"
-    onclick="openForm()"
-    style ="cursor: pointer;"
->
-<!--javascript -->
-<!--style js-->
-<script>
-    let toptitle = document.getElementById("toptitle");
-    toptitle.style.backgroundImage = "linear-gradient(rgb(255, 255, 255),rgb(0,0,0))" ;
-    const today = new Date();
-    const month = today.getMonth();
-    function openForm(){
-        popupWindow = window.open("about:blank", "targe=_blank", "");
-            popupWindow.document.write(`
-            <link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/4/45/White_box_55x90.png">
-            <title>‎</title>
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf9hhq4ISnWDDpR5tSES0HB7JKYY6llxtD8owhwgruMSxyEYg/viewform?embedded=true" style="position:fixed; top:0px; left:0px; bottom:0px; right:0px;  border:none; margin:0; padding:0; overflow:hidden; z-index:999999; width: 100%; height: 100%;"></iframe>
-            <script> 
-                document.addEventListener("keydown",(event) => {const keyName = event.key;if (event.altKey && event.key === "z") {window.location.replace("https://classroom.google.com/w/NTIzNDc0ODE5ODg4/t/all");return;}})
-                let til = prompt("what do you want the title to be?");
-                document.title = til;
+                        document.addEventListener("keydown",(event) => {const keyName = event.key;if (event.altKey && event.key === "x") 
+                        {
+                            til = prompt("new title")
+                            document.title = til;}})
+                    <\/script>`)
+            }
+            if(month == 9){
+                let t = document.createElement('img');
+                t.style.width = "130px";
+                t.style.position = "absolute"
+                t.style.top = "10"
+                t.style.left = "10"
+                t.src = "https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/refs/heads/main/imgs/topcardSprites/hollow.png";
+                document.body.appendChild(t);
+                toptitle.style.backgroundImage = "linear-gradient(rgb(214, 93, 6),rgb(0, 0, 0))" ;
+                let b = document.createElement('img');
+                b.style.width = "130px";
+                b.style.position = "absolute"
+                b.style.top = "10"
+                b.style.right = "10"
+                b.src = "https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/refs/heads/main/imgs/topcardSprites/hollow.png";
+                document.body.appendChild(b);
+            }
+            else if(month == 11){
+                let t = document.createElement('img');
+                t.style.width = "120px";
+                t.style.position = "absolute"
+                t.style.top = "10"
+                t.style.left = "10"
+                t.src = "https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/refs/heads/main/imgs/topcardSprites/chrismaspresent.png";
+                document.body.appendChild(t);
+                let b = document.createElement('img');
+                b.style.width = "70px";
+                b.style.position = "absolute"
+                b.style.top = "0"
+                b.style.right = "10"
+                b.src = "https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/refs/heads/main/imgs/topcardSprites/chrismastree.png";
+                document.body.appendChild(b);
+                toptitle.style.backgroundImage = "linear-gradient(rgb(201, 40, 28), rgb(95, 230, 46))" ;
+            }
+            else if(month == 6){
+                let toptitle = document.getElementById("toptitle");
+                let t = document.createElement('img');
+                t.style.width = "100px";
+                t.style.position = "absolute"
+                t.style.top = "10"
+                t.style.left = "10"
+                t.src = "https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/refs/heads/main/imgs/topcardSprites/fireworklunching.webp";
+                document.body.appendChild(t);
+                let b = document.createElement('img');
+                b.style.width = "100px";
+                b.style.position = "absolute"
+                b.style.top = "10"
+                b.style.right = "10"
+                b.src = "https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/refs/heads/main/imgs/topcardSprites/fireworkexpl.png";
+                document.body.appendChild(b);
+                toptitle.style.backgroundImage = "linear-gradient(rgb(150, 0, 0),rgb(255, 255, 255),rgb(0, 0, 150))" ;
+            }
+            else if(month == 2){
+                let toptitle = document.getElementById("toptitle");
+                let t = document.createElement('img');
+                t.style.width = "100px";
+                t.style.position = "absolute"
+                t.style.top = "10"
+                t.style.left = "10"
+                t.src = "https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/refs/heads/main/imgs/topcardSprites/eastereggbaeket.png";
+                document.body.appendChild(t);
+                toptitle.style.backgroundImage = "linear-gradient(rgb(240, 229, 110),rgb(81, 240, 124),rgb(255, 255, 255))" ;
+                let b = document.createElement('img');
+                b.style.width = "100px";
+                b.style.position = "absolute"
+                b.style.top = "10"
+                b.style.right = "10"
+                b.src = "https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/refs/heads/main/imgs/topcardSprites/eastereggbaeket.png";
+                document.body.appendChild(b);
+            }
+            else if(month == 10){
+                let t = document.createElement('img');
+                t.style.width = "100px";
+                t.style.position = "absolute"
+                t.style.top = "10"
+                t.style.left = "10"
+                t.src = "https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/refs/heads/main/imgs/topcardSprites/turks.png";
+                document.body.appendChild(t);
+                let b = document.createElement('img');
+                b.style.width = "100px";
+                b.style.position = "absolute"
+                b.style.top = "10"
+                b.style.right = "10"
+                b.src = "https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/refs/heads/main/imgs/topcardSprites/turk.png";
+                document.body.appendChild(b);
+                toptitle.style.backgroundImage = "linear-gradient(rgb(120, 0, 0),rgb(212, 98, 17),rgb(222, 194, 16))" ;
+            }
+            else if(month == 8){
+                let toptitle = document.getElementById("toptitle");
+                let t = document.createElement('img');
+                t.style.width = "100px";
+                t.style.position = "absolute"
+                t.style.top = "10"
+                t.style.left = "10"
+                t.src = "https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/refs/heads/main/imgs/topcardSprites/plane.png";
+                document.body.appendChild(t);
+                let b = document.createElement('img');
+                b.style.width = "100px";
+                b.style.position = "absolute"
+                b.style.top = "10"
+                b.style.right = "10"
+                b.src = "https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/refs/heads/main/imgs/topcardSprites/twintowers.png";
+                document.body.appendChild(b);
+                toptitle.style.backgroundImage = "linear-gradient(rgb(122, 245, 239),rgb(136, 143, 142))"
+            }
+        </script>
+    </body>
 
-                document.addEventListener("keydown",(event) => {const keyName = event.key;if (event.altKey && event.key === "x") 
-                {
-                    til = prompt("new title")
-                    document.title = til;}})
-            <\/script>`)
-    }
-    if(month == 9){
-        let t = document.createElement('img');
-        t.style.width = "130px";
-        t.style.position = "absolute"
-        t.style.top = "10"
-        t.style.left = "10"
-        t.src = "https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/refs/heads/main/imgs/topcardSprites/hollow.png";
-        document.body.appendChild(t);
-        toptitle.style.backgroundImage = "linear-gradient(rgb(214, 93, 6),rgb(0, 0, 0))" ;
-        let b = document.createElement('img');
-        b.style.width = "130px";
-        b.style.position = "absolute"
-        b.style.top = "10"
-        b.style.right = "10"
-        b.src = "https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/refs/heads/main/imgs/topcardSprites/hollow.png";
-        document.body.appendChild(b);
-    }
-    else if(month == 11){
-        let t = document.createElement('img');
-        t.style.width = "120px";
-        t.style.position = "absolute"
-        t.style.top = "10"
-        t.style.left = "10"
-        t.src = "https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/refs/heads/main/imgs/topcardSprites/chrismaspresent.png";
-        document.body.appendChild(t);
-        let b = document.createElement('img');
-        b.style.width = "70px";
-        b.style.position = "absolute"
-        b.style.top = "0"
-        b.style.right = "10"
-        b.src = "https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/refs/heads/main/imgs/topcardSprites/chrismastree.png";
-        document.body.appendChild(b);
-        toptitle.style.backgroundImage = "linear-gradient(rgb(201, 40, 28), rgb(95, 230, 46))" ;
-    }
-    else if(month == 6){
-        let toptitle = document.getElementById("toptitle");
-        let t = document.createElement('img');
-        t.style.width = "100px";
-        t.style.position = "absolute"
-        t.style.top = "10"
-        t.style.left = "10"
-        t.src = "https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/refs/heads/main/imgs/topcardSprites/fireworklunching.webp";
-        document.body.appendChild(t);
-        let b = document.createElement('img');
-        b.style.width = "100px";
-        b.style.position = "absolute"
-        b.style.top = "10"
-        b.style.right = "10"
-        b.src = "https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/refs/heads/main/imgs/topcardSprites/fireworkexpl.png";
-        document.body.appendChild(b);
-        toptitle.style.backgroundImage = "linear-gradient(rgb(150, 0, 0),rgb(255, 255, 255),rgb(0, 0, 150))" ;
-    }
-    else if(month == 2){
-        let toptitle = document.getElementById("toptitle");
-        let t = document.createElement('img');
-        t.style.width = "100px";
-        t.style.position = "absolute"
-        t.style.top = "10"
-        t.style.left = "10"
-        t.src = "https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/refs/heads/main/imgs/topcardSprites/eastereggbaeket.png";
-        document.body.appendChild(t);
-        toptitle.style.backgroundImage = "linear-gradient(rgb(240, 229, 110),rgb(81, 240, 124),rgb(255, 255, 255))" ;
-        let b = document.createElement('img');
-        b.style.width = "100px";
-        b.style.position = "absolute"
-        b.style.top = "10"
-        b.style.right = "10"
-        b.src = "https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/refs/heads/main/imgs/topcardSprites/eastereggbaeket.png";
-        document.body.appendChild(b);
-    }
-    else if(month == 10){
-        let t = document.createElement('img');
-        t.style.width = "100px";
-        t.style.position = "absolute"
-        t.style.top = "10"
-        t.style.left = "10"
-        t.src = "https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/refs/heads/main/imgs/topcardSprites/turks.png";
-        document.body.appendChild(t);
-        let b = document.createElement('img');
-        b.style.width = "100px";
-        b.style.position = "absolute"
-        b.style.top = "10"
-        b.style.right = "10"
-        b.src = "https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/refs/heads/main/imgs/topcardSprites/turk.png";
-        document.body.appendChild(b);
-        toptitle.style.backgroundImage = "linear-gradient(rgb(120, 0, 0),rgb(212, 98, 17),rgb(222, 194, 16))" ;
-    }
-    else if(month == 8){
-        let toptitle = document.getElementById("toptitle");
-        let t = document.createElement('img');
-        t.style.width = "100px";
-        t.style.position = "absolute"
-        t.style.top = "10"
-        t.style.left = "10"
-        t.src = "https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/refs/heads/main/imgs/topcardSprites/plane.png";
-        document.body.appendChild(t);
-        let b = document.createElement('img');
-        b.style.width = "100px";
-        b.style.position = "absolute"
-        b.style.top = "10"
-        b.style.right = "10"
-        b.src = "https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/refs/heads/main/imgs/topcardSprites/twintowers.png";
-        document.body.appendChild(b);
-        toptitle.style.backgroundImage = "linear-gradient(rgb(122, 245, 239),rgb(136, 143, 142))"
-    }
-</script>
-<!-- functions popup -->
-<script>
-    function popup(popuptitle, inntex, fontsiz) {
-        let ma = document.createElement('div');
-        ma.style.backgroundColor = "white";
-        ma.style.borderRadius = "20px"
-        ma.style.width = "400px";
-        ma.style.height = "150px";
-        ma.id = "hu";
-        ma.style.margin = "15px"
-        ma.style.position = "absolute";
-        ma.style.left = "0";
-        ma.style.top = "0";
-        ma.innerText = "_"+popuptitle;
+    <!--__________________________________________script__________________________________________-->
+    <body>
+        <!-------game func---------->
+        <script>
+            function gam(whatgam, url, size, imagelink) {
+            let t = document.createElement('img');
+            t.src = imagelink;
+            t.width = size;
+            t.style.borderRadius = "35px";
+            t.style.margin = "8px"
+            t.style.cursor = "pointer"
+            t.innerHTML = whatgam;
+            t.title = whatgam;
+            t.onclick = function() { op(url); };
+            document.body.appendChild(t);
+                function op(url){popupWindow = window.open("about:blank", "targe=_blank", "");
+                popupWindow.document.write(`
+                <link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/4/45/White_box_55x90.png">
+                <title>‎</title>
+                <iframe src="`+url+`" style="position:fixed; top:0px; left:0px; bottom:0px; right:0px;  border:none; margin:0; padding:0; overflow:hidden; z-index:999999; width: 100%; height: 100%;"></iframe>
+                <script> 
+                    document.addEventListener("keydown",(event) => {const keyName = event.key;if (event.altKey && event.key === "z") {window.location.replace("https://classroom.google.com/w/NTIzNDc0ODE5ODg4/t/all");return;}})
+                    let til = prompt("what do you want the title to be?");
+                    document.title = til;
 
-        let tex = document.createElement('a');
-        tex.innerText = inntex;
-        tex.style.fontSize = fontsiz;
-        tex.style.position = "absolute";
-        tex.style.left = "10px";
-        tex.style.top = "50px";
-        ma.appendChild(tex);
-
-        let xbox = document.createElement('a');
-        xbox.style.backgroundColor = "red";
-        xbox.style.position = "absolute";
-        xbox.innerText = "X";
-        xbox.style.cursor = "pointer";
-        xbox.style.left = "388px";
-        xbox.onclick = () => document.body.removeChild(ma);
-        ma.appendChild(xbox);
-        document.body.appendChild(ma);
-    }
-    if(localStorage.popup == null){
-        popup("controls", "alt+Z switches your tab to google classroom, alt+X allows you to change tab name wich only works on the aboutblanks, alt+H for more info.", 15)
-        popup("it is", "these are important to make sure u dont get caught so the website stays up longer and u dont get in trouble", 15)
-        popup("pls do","pls read these", 50);
-        localStorage.popup = true;
-    }
-</script>
-<!-- functions gam html -->
-<script>
-    function    gamhtml(title, githuburl, size, imglink) {
-    let t = document.createElement('img');
-    t.src = imglink;
-    t.width = size;
-    t.style.borderRadius = "35px";
-    t.style.margin = "10px";
-    t.style.cursor = "pointer";
-    t.innerHTML = title;
-    t.title = title;
-    t.onclick = function() { op(githuburl); };
-    document.body.appendChild(t);
-        function op(githuburl){
-            fetch(githuburl)
-            .then(res => res.text())
-            .then((textResponse) => {
-            popupWindow = window.open("about:blank", "targe=_blank", "");
-            popupWindow.document.write(textResponse);
-    });
-        }    
+                    document.addEventListener("keydown",(event) => {const keyName = event.key;if (event.altKey && event.key === "x") 
+                    {
+                        til = prompt("new title")
+                        document.title = til;}})
+                <\/script>`);
+            }    
         }
-</script>
-<!-- functions gam url -->
- <script>
-        function gam(whatgam, url, size, imagelink) {
-        let t = document.createElement('img');
-        t.src = imagelink;
-        t.width = size;
-        t.style.borderRadius = "35px";
-        t.style.margin = "8px"
-        t.style.cursor = "pointer"
-        t.innerHTML = whatgam;
-        t.title = whatgam;
-        t.onclick = function() { op(url); };
-        document.body.appendChild(t);
-            function op(url){popupWindow = window.open("about:blank", "targe=_blank", "");
-            popupWindow.document.write(`
-            <link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/4/45/White_box_55x90.png">
-            <title>‎</title>
-            <iframe src="`+url+`" style="position:fixed; top:0px; left:0px; bottom:0px; right:0px;  border:none; margin:0; padding:0; overflow:hidden; z-index:999999; width: 100%; height: 100%;"></iframe>
-            <script> 
-                document.addEventListener("keydown",(event) => {const keyName = event.key;if (event.altKey && event.key === "z") {window.location.replace("https://classroom.google.com/w/NTIzNDc0ODE5ODg4/t/all");return;}})
-                let til = prompt("what do you want the title to be?");
-                document.title = til;
+        </script>
+        <!--------html game func--------->
+        <script>
+            function    gamhtml(title, githuburl, size, imglink) {
+            let t = document.createElement('img');
+            t.src = imglink;
+            t.width = size;
+            t.style.borderRadius = "35px";
+            t.style.margin = "10px";
+            t.style.cursor = "pointer";
+            t.innerHTML = title;
+            t.title = title;
+            t.onclick = function() { op(githuburl); };
+            document.body.appendChild(t);
+                function op(githuburl){
+                    fetch(githuburl)
+                    .then(res => res.text())
+                    .then((textResponse) => {
+                    popupWindow = window.open("about:blank", "targe=_blank", "");
+                    popupWindow.document.write(textResponse);
+                    });
+                }    
+            }
+        </script>
+        <!-----------popup------------>
+        <script>
+            function popup(popuptitle, inntex, fontsiz) {
+            let pop = document.createElement('div');
+            pop.style.backgroundColor = "white";
+            pop.style.borderRadius = "20px"
+            pop.style.width = "400px";
+            pop.style.height = "150px";
+            pop.id = "hu";
+            pop.style.margin = "15px"
+            pop.style.position = "absolute";
+            pop.style.left = "0";
+            pop.style.top = "0";
+            pop.innerText = "_"+popuptitle;
 
-                document.addEventListener("keydown",(event) => {const keyName = event.key;if (event.altKey && event.key === "x") 
-                {
-                    til = prompt("new title")
-                    document.title = til;}})
-            <\/script>`);
-        }    
-    }
- </script>
- <!-- key binds -->
-<script>  
-    document.addEventListener("keydown",(event) => {const keyName = event.key;if (event.altKey && event.key === "a") 
-    {
-        popup("auothors", "this websties's code was made by the mush ug production team including:Konig-verdorren(@phavnox, jaimon williams) as head develpor, bryson patridas as backend dev, and camron wolfe as front end dev", 15)
-    }})  
-    document.addEventListener("keydown",(event) => {const keyName = event.key;if (event.altKey && event.key === "q" && event.key === "/") 
-    {
-        popup("dev", "local storage ''popup'' has been deleted")
-        localStorage.removeItem("popup");
-    }})  
-    document.addEventListener("keydown",(event) => {const keyName = event.key;if (event.altKey && event.key === "h") 
-    {
-        popup("moreinfo", "on gogaurdian there is 3 things for them to tell hat page ur on, in the wide view. the screen: on go gaurdian it will show the last page u were on when in the about blanks. the title: they can see the title of the about blank so u can change it to match ur screen. the icon: the icon of the page is invisible to go gaurdian and will show nothing", 13)
-    }})
-    document.addEventListener("keydown",(event) => {const keyName = event.key;if (event.altKey && event.key === "\\") 
-    {
-        popup("dev", "u have opend develepor tools", 20)
-        gamhtml("contpannle for L.I.T testing", "https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/refs/heads/main/dev/contpannle.html", 80, "https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/main/dev/dev_imgs/contpannle.png")
-        gamhtml("update request tools", "https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/refs/heads/main/dev/ur.html", 80, "https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/main/dev/dev_imgs/ur.png")
-    }})
-    document.addEventListener("keydown",(event) => {const keyName = event.key;if (event.altKey && event.key === "f") 
-    {
-        let fv = document.createElement('img');
-        fv.src = "https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/main/imgs/furry.png";
-        fv.width = 80;
-        fv.border = "5px";
-        fv.style.borderColor = "pink";
-        fv.style.margin = "10px"
-        fv.style.borderRadius = "30px"
-        fv.style.cursor = "pointer"
-        fv.innerHTML = "sorry no furry, bad browser";
-        fv.title = "furry is cute";
-        fv.onclick = function() {popup("furry", "congrats to u ur a furry now, and also go up to ur url bar and ctrl+v and then enter quickly after in it", 20);navigator.clipboard.writeText("chrome://restart"); };
-        document.body.appendChild(fv);
-    }})
-</script>
-<!-- urls -->
-<script>
-    gam('armedforces.io' ,'https://armedforces.io/', 80, 'https://cdn.now.gg/apps-content/com.nowgg.h5.pub483.app51325/icon/armedforces-io.png');
-    gam('useless websites', 'https://www.google.com/url?q=https%3A%2F%2Fwww.the-useless.website%2F&sa=D&sntz=1&usg=AOvVaw24-GZnYRMrIkRR0SogwVK9', 70, 'https://www.pcsteps.com/wp-content/uploads/2017/07/Useless-Websites_07.png');
-    gam('call of war','https://www.callofwar.com/game.php?bust=1#/home/overview/',80,'https://play-lh.googleusercontent.com/b9ciFqaHv7Uk6it_sxIbsWtZJiBPmZMa14-rBbz7xr9T3zc1wvBnMXcAy7ZTNBSHRNA')
-    gam('cps test', 'https://cpstest.org/10-seconds.php', 80, 'https://play-lh.googleusercontent.com/4NGA368Enz6meneQsE18ccVHrnRjmYo2V79r_Bx0J92BT-LvE34U24mw7p6HsIOGhzc')
-    gam('chess', 'https://www.247chess.com/', 80,'https://c8.alamy.com/comp/2MA8PD1/chess-club-emblem-chess-tournament-logo-chess-pieces-isolated-on-a-white-background-2MA8PD1.jpg')
-    gam('color match game', 'https://color.method.ac/', 80, 'https://cdn.vox-cdn.com/thumbor/oO8nXd0jZWDAAdTMxTcKqrOaNNE=/0x0:793x450/1400x1400/filters:focal(396x225:397x226)/cdn.vox-cdn.com/uploads/chorus_asset/file/13907004/color.1419964694.jpg')
-    gam('cookie clicker', 'https://eli-schwartz.github.io/cookieclicker/', 80, 'https://assets-prd.ignimgs.com/2022/11/30/cookieclicker-1669850660953.jpg')
-    gam("chrome dino game", 'https://trex-runner.com/', 80, 'https://play-lh.googleusercontent.com/iiIJq5JmLFYNI1bVz4IBHyoXs508JcEzHhOgau69bnveF9Wat51-ax9LMPVOlneKwqg')
-    gam('drive mad', 'https://www.drivemad.com/', '80', 'https://images.sftcdn.net/images/t_app-icon-m/p/236ba3fd-fcb7-4aaf-9e8d-586004294e06/201633562/drive-mad-original-game-qcx-logo')
-    gam('doodle baseball', 'https://doodlebaseball.io/', 80, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPNFvUztUxfIwJRg_4CBaLNaqZoIctTexCog&s')
-    gam("drive mad gmaes", 'https://drivemad.me/', 80, 'https://img.poki.com/cdn-cgi/image/quality=78,width=314,height=314,fit=cover,f=auto/f8a2160e52333ee0d44ec19e8ca65139.png')
-    gam('eggy car', 'https://eggy-car.github.io/', 80, 'https://media.shortverse.com/media/film/e632910ec71598311b5d4e37bcb8a03f/1x6-W10=-53ba8d0ff0c649c1c47a78e77cd654a3.png')
-    gam('fluid sim', 'https://paveldogreat.github.io/WebGL-Fluid-Simulation/', 80, 'https://paveldogreat.github.io/WebGL-Fluid-Simulation/logo.png')
-    gam('freeze nova', 'https://unblocked-games.s3.amazonaws.com/index.html', 80, 'https://play-lh.googleusercontent.com/ax5bz_85P7kcFiLfLCuYv9x8xQOaPXRmTtAfoXa92RE2MBzogZMa_lJlrQkTzwe4a4Js')
-    gam('funny games', 'https://FunnyGames.org', 80, 'https://www.funnygames.org/images/placeholders/thumb@2x.png')
-    gam('geometry spot', 'https://geometryspot.com/', 80, 'https://images.crunchbase.com/image/upload/c_pad,f_auto,q_auto:eco,dpr_1/q9bk5lgslgnu6o92nwzj')
-    gam('garticphone', 'https://garticphone.com/', 80, 'https://cdn-1.webcatalog.io/catalog/gartic-phone/gartic-phone-icon-filled-256.png?v=1714774459562')
-    gam('grindcraft', 'https://grindcraft.fbrq.io/grindcraft/index.html', 80, 'https://image.winudf.com/v2/image/Y29tLnNlcnZlcnNtYW5hZ2VyLnRvX2ljb25fMF9kYWUyZTE0Nw/icon.png?fakeurl=1&h=240&type=webp')
-    gam('happy wheels','https://fivenightsatfreddys3.com/happy-wheels',91, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ5pA3QwEBa-swTdKAtnSNNRZwtDA4K28ehw&s')
-    gam('idle breakout', 'https://idle-breakout.github.io/', 80 ,'https://play-lh.googleusercontent.com/e5jzYTn7Mjh9Ghn-DFpVedkOlRfSOyCS2AFgXdTrADIuuUbjx6vP6r_YOM2j5m7uLQ')
-    gam('inna woods', 'https://innawoods.net/', 80, 'https://androidhappy.ru/uploads/posts/2023-07/1689797463_12-1.jpg')
-    gam('neal.fun','https://neal.fun/', 80, 'https://static.gameloop.com/img/bd5a03e397e1a58d5b4a0643b5b5d130.png?imageMogr2/thumbnail/172.8x172.8/format/webp')
-    gam('poker', 'https://www.247freepoker.com/',80, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo9s8vcgkgu9gTxxlg4-2KVnIXDk_M_jZxcg&s')
-    gam('black jack', 'https://www.247blackjack.com/', 80, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFqcVDZ34RK-LNgg5ONXon7q4qRATEQdPlDA&s')
-    gam('sand bloxels', 'https://sandboxels.r74n.com/', 80, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8yVbwYPNvdQCQjQFavCp8TsmzaPK6azE-TQ&s')
-    gam('snow rider 3d', 'https://snow-rider-3d.github.io/', 80, 'https://www.merlot.org/merlot/getMaterialImage.htm?id=773417944')
-    gam('slop', 'https://slope3d.net/', 80, 'https://slope-game.github.io/rungame/slope/logo.png')
-    gam('territorial', 'https://territorial.io/', 80, "https://backroomsgame.io/cache/data/image/game/territorialio-f150x150.png")
-    gam('warzone(map stratigie game)', 'https://warzone.com', 80, 'https://play-lh.googleusercontent.com/6Zg2dz2eaBjEh67ySPtZarmWrgQkurdyel8VLPGB-YxaoeK_IERwDxgJdVZjSjjFk6w')
-    gamhtml('weapon addon sandbloxles', 'https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/main/html%20game/weapons%20addon%20sandbloxles', 80, 'https://img.icons8.com/?size=512&id=QgiVYDIaXkWE&format=png')
-</script>
-</body>
+            let tex = document.createElement('a');
+            tex.innerText = inntex;
+            tex.style.fontSize = fontsiz;
+            tex.style.position = "absolute";
+            tex.style.left = "10px";
+            tex.style.top = "50px";
+            pop.appendChild(tex);
+
+            let xbox = document.createElement('a');
+            xbox.style.backgroundColor = "red";
+            xbox.style.position = "absolute";
+            xbox.innerText = "X";
+            xbox.style.cursor = "pointer";
+            xbox.style.left = "388px";
+            xbox.onclick = () => document.body.removeChild(pop);
+            pop.appendChild(xbox);
+            document.body.appendChild(pop);
+        }
+        if(localStorage.popup == null){
+            popup("controls", "alt+Z switches your tab to google classroom, alt+X allows you to change tab name wich only works on the aboutblanks, alt+H for more info.", 15)
+            popup("it is", "these are important to make sure u dont get caught so the website stays up longer and u dont get in trouble", 15)
+            popup("pls do","pls read these", 50);
+            localStorage.popup = true;
+        }
+        </script>
+        <!---------key binds---------->
+        <script>
+            document.addEventListener("keydown",(event) => {const keyName = event.key;if (event.altKey && event.key === "a") 
+            {
+                popup("auothors", "this websties's code was made by the mush ug production team including:Konig-verdorren(@phavnox, jaimon williams) as head develpor, bryson patridas as backend dev, and camron wolfe as front end dev", 15)
+            }})  
+            document.addEventListener("keydown",(event) => {const keyName = event.key;if (event.altKey && event.key === "q" && event.key === "/") 
+            {
+                popup("dev", "local storage ''popup'' has been deleted")
+                localStorage.removeItem("popup");
+            }})  
+            document.addEventListener("keydown",(event) => {const keyName = event.key;if (event.altKey && event.key === "h") 
+            {
+                popup("moreinfo", "on gogaurdian there is 3 things for them to tell hat page ur on, in the wide view. the screen: on go gaurdian it will show the last page u were on when in the about blanks. the title: they can see the title of the about blank so u can change it to match ur screen. the icon: the icon of the page is invisible to go gaurdian and will show nothing", 13)
+            }})
+            document.addEventListener("keydown",(event) => {const keyName = event.key;if (event.altKey && event.key === "\\") 
+            {
+                popup("dev", "u have opend develepor tools", 20)
+                gamhtml("contpannle for L.I.T testing", "https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/refs/heads/main/dev/contpannle.html", 80, "https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/main/dev/dev_imgs/contpannle.png")
+                gamhtml("update request tools", "https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/refs/heads/main/dev/ur.html", 80, "https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/main/dev/dev_imgs/ur.png")
+            }})
+        </script>
+    </body>
+    <!--__________________________________________games__________________________________________-->
+    <body>
+        <script>
+            gam('armedforces.io' ,'https://armedforces.io/', 80, 'https://cdn.now.gg/apps-content/com.nowgg.h5.pub483.app51325/icon/armedforces-io.png');
+            gam('useless websites', 'https://www.google.com/url?q=https%3A%2F%2Fwww.the-useless.website%2F&sa=D&sntz=1&usg=AOvVaw24-GZnYRMrIkRR0SogwVK9', 70, 'https://www.pcsteps.com/wp-content/uploads/2017/07/Useless-Websites_07.png');
+            gam('call of war','https://www.callofwar.com/game.php?bust=1#/home/overview/',80,'https://play-lh.googleusercontent.com/b9ciFqaHv7Uk6it_sxIbsWtZJiBPmZMa14-rBbz7xr9T3zc1wvBnMXcAy7ZTNBSHRNA')
+            gam('cps test', 'https://cpstest.org/10-seconds.php', 80, 'https://play-lh.googleusercontent.com/4NGA368Enz6meneQsE18ccVHrnRjmYo2V79r_Bx0J92BT-LvE34U24mw7p6HsIOGhzc')
+            gam('chess', 'https://www.247chess.com/', 80,'https://c8.alamy.com/comp/2MA8PD1/chess-club-emblem-chess-tournament-logo-chess-pieces-isolated-on-a-white-background-2MA8PD1.jpg')
+            gam('color match game', 'https://color.method.ac/', 80, 'https://cdn.vox-cdn.com/thumbor/oO8nXd0jZWDAAdTMxTcKqrOaNNE=/0x0:793x450/1400x1400/filters:focal(396x225:397x226)/cdn.vox-cdn.com/uploads/chorus_asset/file/13907004/color.1419964694.jpg')
+            gam('cookie clicker', 'https://eli-schwartz.github.io/cookieclicker/', 80, 'https://assets-prd.ignimgs.com/2022/11/30/cookieclicker-1669850660953.jpg')
+            gam("chrome dino game", 'https://trex-runner.com/', 80, 'https://play-lh.googleusercontent.com/iiIJq5JmLFYNI1bVz4IBHyoXs508JcEzHhOgau69bnveF9Wat51-ax9LMPVOlneKwqg')
+            gam('drive mad', 'https://www.drivemad.com/', '80', 'https://images.sftcdn.net/images/t_app-icon-m/p/236ba3fd-fcb7-4aaf-9e8d-586004294e06/201633562/drive-mad-original-game-qcx-logo')
+            gam('doodle baseball', 'https://doodlebaseball.io/', 80, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPNFvUztUxfIwJRg_4CBaLNaqZoIctTexCog&s')
+            gam("drive mad gmaes", 'https://drivemad.me/', 80, 'https://img.poki.com/cdn-cgi/image/quality=78,width=314,height=314,fit=cover,f=auto/f8a2160e52333ee0d44ec19e8ca65139.png')
+            gam('eggy car', 'https://eggy-car.github.io/', 80, 'https://media.shortverse.com/media/film/e632910ec71598311b5d4e37bcb8a03f/1x6-W10=-53ba8d0ff0c649c1c47a78e77cd654a3.png')
+            gam('fluid sim', 'https://paveldogreat.github.io/WebGL-Fluid-Simulation/', 80, 'https://paveldogreat.github.io/WebGL-Fluid-Simulation/logo.png')
+            gam('freeze nova', 'https://unblocked-games.s3.amazonaws.com/index.html', 80, 'https://play-lh.googleusercontent.com/ax5bz_85P7kcFiLfLCuYv9x8xQOaPXRmTtAfoXa92RE2MBzogZMa_lJlrQkTzwe4a4Js')
+            gam('funny games', 'https://FunnyGames.org', 80, 'https://www.funnygames.org/images/placeholders/thumb@2x.png')
+            gam('geometry spot', 'https://geometryspot.com/', 80, 'https://images.crunchbase.com/image/upload/c_pad,f_auto,q_auto:eco,dpr_1/q9bk5lgslgnu6o92nwzj')
+            gam('garticphone', 'https://garticphone.com/', 80, 'https://cdn-1.webcatalog.io/catalog/gartic-phone/gartic-phone-icon-filled-256.png?v=1714774459562')
+            gam('grindcraft', 'https://grindcraft.fbrq.io/grindcraft/index.html', 80, 'https://image.winudf.com/v2/image/Y29tLnNlcnZlcnNtYW5hZ2VyLnRvX2ljb25fMF9kYWUyZTE0Nw/icon.png?fakeurl=1&h=240&type=webp')
+            gam('happy wheels','https://fivenightsatfreddys3.com/happy-wheels',91, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ5pA3QwEBa-swTdKAtnSNNRZwtDA4K28ehw&s')
+            gam('idle breakout', 'https://idle-breakout.github.io/', 80 ,'https://play-lh.googleusercontent.com/e5jzYTn7Mjh9Ghn-DFpVedkOlRfSOyCS2AFgXdTrADIuuUbjx6vP6r_YOM2j5m7uLQ')
+            gam('inna woods', 'https://innawoods.net/', 80, 'https://androidhappy.ru/uploads/posts/2023-07/1689797463_12-1.jpg')
+            gam('neal.fun','https://neal.fun/', 80, 'https://static.gameloop.com/img/bd5a03e397e1a58d5b4a0643b5b5d130.png?imageMogr2/thumbnail/172.8x172.8/format/webp')
+            gam('poker', 'https://www.247freepoker.com/',80, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo9s8vcgkgu9gTxxlg4-2KVnIXDk_M_jZxcg&s')
+            gam('black jack', 'https://www.247blackjack.com/', 80, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFqcVDZ34RK-LNgg5ONXon7q4qRATEQdPlDA&s')
+            gam('sand bloxels', 'https://sandboxels.r74n.com/', 80, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8yVbwYPNvdQCQjQFavCp8TsmzaPK6azE-TQ&s')
+            gam('snow rider 3d', 'https://snow-rider-3d.github.io/', 80, 'https://www.merlot.org/merlot/getMaterialImage.htm?id=773417944')
+            gam('slop', 'https://slope3d.net/', 80, 'https://slope-game.github.io/rungame/slope/logo.png')
+            gam('territorial', 'https://territorial.io/', 80, "https://backroomsgame.io/cache/data/image/game/territorialio-f150x150.png")
+            gam('warzone(map stratigie game)', 'https://warzone.com', 80, 'https://play-lh.googleusercontent.com/6Zg2dz2eaBjEh67ySPtZarmWrgQkurdyel8VLPGB-YxaoeK_IERwDxgJdVZjSjjFk6w')
+            gamhtml('weapon addon sandbloxles', 'https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/main/html%20game/weapons%20addon%20sandbloxles', 80, 'https://img.icons8.com/?size=512&id=QgiVYDIaXkWE&format=png')
+        </script>
+    </body>
+</html>
