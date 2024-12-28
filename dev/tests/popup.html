@@ -1,0 +1,36 @@
+<body style="background-image: linear-gradient(#000,#eee);">
+    <script>
+        function popup(popuptitle, inntex, fontsiz) {
+            let pop = document.createElement('div');
+            pop.style.backgroundColor = "white";
+            pop.style.borderRadius = "20px"
+            pop.style.width = "400px";
+            pop.style.height = "150px";
+            pop.id = "popup";
+            pop.style.margin = "15px"
+            pop.style.position = "absolute";
+            pop.style.left = "0";
+            pop.style.top = "0";
+            pop.innerText = " " + popuptitle;
+
+            let tex = document.createElement('a');
+            tex.innerText = inntex;
+            tex.style.fontSize = fontsiz;
+            tex.style.position = "absolute";
+            tex.style.left = "10px";
+            tex.style.top = "50px";
+            pop.appendChild(tex);
+
+            let xbox = document.createElement('a');
+            xbox.style.backgroundColor = "red";
+            xbox.style.position = "absolute";
+            xbox.innerText = "X";
+            xbox.style.cursor = "pointer";
+            xbox.style.left = "388px";
+            xbox.onclick = () => document.body.removeChild(pop);
+            pop.appendChild(xbox);
+            document.body.appendChild(pop)
+        }
+        popup("test", "sticels", 30)
+    </script>
+</body>

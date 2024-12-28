@@ -5,3 +5,4 @@
 
 - as the team becomes bigger and the prodution becomes higher quality monye mite be needed to be broght in to the picture. altho we dont like the idea of ads its really the only way it we mite head into suddle ads to make a small income to keep things up and running
 
+invis symbols idfk lol = [ ,​,‌,‍‎,‏]

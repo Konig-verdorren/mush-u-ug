@@ -8,15 +8,20 @@
     <meta name="description" content="mush ug is a unblocked games platform for a destop device">
     <meta name="licrnce" content="free use code, auothors: Jaimon Williams, Bryson Patridas, Camron Wolfe">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+    <script src="goodboi.js"></script>
 </head>
 
 <!--__________________________________________style__________________________________________-->
 
 <head>
+    <!-- less style scripts -->
+    <script>
+    </script>
     <!---------css style-------->
     <style>
         body {
-            background: linear-gradient(-45deg, black, rgb(255, 179, 186), rgb(255, 223, 186), rgb(255, 255, 186), rgb(186, 255, 201), rgb(186, 225, 255), black);
+            background: linear-gradient(-45deg, );
             background-size: 400% 400%;
             animation: gradient 60s ease infinite;
         }
@@ -65,34 +70,36 @@
         
         #forms {
             position: fixed;
-            right: 15px;
-            bottom: 15px;
+            bottom: 0px;
+            margin: 15;
+            right: 0px;
             width: 30px;
         }
         
         #forms:hover {
             width: 33px;
             filter: hue-rotate(100deg);
-            margin: 3.5;
+            margin: 13.5;
         }
         
         #anoun:hover {
             width: 44px;
             filter: hue-rotate(100deg);
-            margin: 3.5;
+            margin: 13.5;
         }
         
         #anoun {
+            bottom: 0px;
+            margin: 15;
             position: fixed;
-            left: 15px;
-            bottom: 15px;
+            left: 0px;
             width: 40px;
         }
         
         #gam:hover {
             filter: grayscale(100);
             width: 83;
-            margin: 6.5;
+            margin: 0;
             height: 83;
         }
     </style>
@@ -107,10 +114,19 @@
     </div>
     <!--------script style-------->
     <script>
+        let ran = Math.floor(Math.random() * 3)
         let toptitle = document.getElementById("toptitle");
         toptitle.style.backgroundImage = "linear-gradient(rgb(255, 255, 255),rgb(0,0,0))";
         const today = new Date();
         const month = today.getMonth();
+
+        if (ran == 0) {
+            document.body.style.backgroundImage = "linear-gradient(-45deg,#f75488,black,#f786aa,black,#3072db,black,#012081,black)"
+        } else if (ran == 1) {
+            document.body.style.backgroundImage = "linear-gradient(-45deg,#4028ad,black,#ad30c9,black,#eb21ab)"
+        } else {
+            document.body.style.backgroundImage = "linear-gradient(-45deg,#1cbae6,black,#ffe019,black,#f7287e,black)"
+        }
 
         function openAnoun() {
             popupWindow = window.open("about:blank", "targe=_blank", "");
@@ -147,6 +163,7 @@
                             document.title = til;}})
                     <\/script>`)
         }
+
         if (month == 9) {
             let t = document.createElement('img');
             t.style.width = "130px";
@@ -247,6 +264,7 @@
             document.body.appendChild(b);
             toptitle.style.backgroundImage = "linear-gradient(rgb(122, 245, 239),rgb(136, 143, 142))"
         }
+        /* be happy i didnt make a function for the top title like what most enterprise person would do because i care about scalability :3 */
     </script>
 </body>
 
@@ -261,7 +279,7 @@
             t.width = size;
             t.height = size;
             t.style.borderRadius = "35px";
-            t.style.margin = "8px"
+            t.style.margin = "10px"
             t.style.cursor = "pointer"
             t.id = "gam"
             t.innerHTML = whatgam;
