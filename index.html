@@ -1,3 +1,19 @@
+Conversation opened. 1 read message.
+
+Skip to content
+Using Bloom-Carroll Local School District Mail with screen readers
+12 of 275
+i fixed
+Inbox
+
+JAIMON WILLIAMS <jaimon.williams29@students.bloomcarroll.org>
+Attachments
+Jan 14, 2025, 10:30 AM
+to me
+
+
+ One attachment
+  •  Scanned by Gmail
 <html>
 <!--__________________________________________boiler plate__________________________________________-->
 
@@ -87,7 +103,11 @@
             filter: hue-rotate(100deg);
             margin: 13.5;
         }
-        
+        #popup{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
         #anoun {
             bottom: 0px;
             margin: 15;
@@ -104,7 +124,7 @@
 <!-------html style------->
 
 <body>
-    <a id="toptitle">~~>L.I.T Mush U.G<~~<img id="lol" src="imgs/custome/lol.png" style="width: 130px;"></a>
+    <a id="toptitle">~~>L.I.T Mush U.G<~~<img id="lol" src="https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/refs/heads/main/imgs/custome/lol.png" style="width: 130px;"></a>
     <div id="taskbar" style="background-color: black;">
         <img id="forms" src="https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/refs/heads/main/imgs/custome/form.png" onclick="openForm()" style="cursor: pointer;">
         <img id="anoun" src="https://cdn-icons-png.flaticon.com/512/5962/5962463.png" onclick="openAnoun()" style="cursor: pointer;">
@@ -273,8 +293,8 @@
         function gam(whatgam, url, size, imagelink) {
             let t = document.createElement('img');
             t.src = imagelink;
-            t.width = size;
-            t.height = size;
+            t.width = 83
+            t.height = 83
             t.style.borderRadius = "35px";
             t.style.margin = "10px"
             t.style.cursor = "pointer"
@@ -310,10 +330,10 @@
         function gamhtml(title, githuburl, size, imglink) {
             let t = document.createElement('img');
             t.src = imglink;
-            t.width = size;
+            t.width = 83
+            t.height = 83
             t.style.borderRadius = "35px";
-            t.style.margin = "8px";
-            t.style.cursor = "pointer";
+            t.style.margin = "10px"
             t.innerHTML = title;
             t.title = title;
             t.id = "gam"
@@ -336,6 +356,7 @@
     <script>
         function popup(popuptitle, inntex, fontsiz) {
             let pop = document.createElement('div');
+            pop.id = "popup";
             pop.style.backgroundColor = "white";
             pop.style.borderRadius = "20px"
             pop.style.width = "400px";
@@ -361,6 +382,8 @@
             xbox.innerText = "X";
             xbox.style.cursor = "pointer";
             xbox.style.left = "388px";
+            xbox.style.borderRadius = "35px";
+
             xbox.onclick = () => document.body.removeChild(pop);
             pop.appendChild(xbox);
             document.body.appendChild(pop);
@@ -410,6 +433,7 @@
         gam('armedforces.io', 'https://armedforces.io/', 80, 'https://cdn.now.gg/apps-content/com.nowgg.h5.pub483.app51325/icon/armedforces-io.png');
         gam('baldy basics', 'https://baldi-game.com/baldis-basics-games', 80, 'https://media.tenor.com/uSgGJbDXzYsAAAAe/baldi-baldis-basics.png')
         gam('block blast', 'https://block-blast.io/', 80, 'https://blockblast.org/upload/cache/upload/imgs/block-blast-unblocked-m240x240.jpg')
+        gam('Basketball.io', 'https://www.basketballlegends.club/basketball-io', 80, 'https://gameforge.com/de-DE/littlegames/includes/images/games/6800_5eb3e911165e9.jpg')
         gam('bloxd.io', 'https://www.crazygames.com/embed/bloxdhop-io', 80, 'https://images.crazygames.com/games/bloxdhop-io/cover_16x9-1709115453824.png?auto=format%2Ccompress&q=75&cs=strip&ch=DPR&w=516')
         gam('Bonk.io', 'https://bonk.io/', 80, 'https://img.gamepix.com/games/bonk-io/cover/bonk-io.png?w=400&ar=16:10')
         gam('call of war', 'https://www.callofwar.com/game.php?bust=1#/home/overview/', 80, 'https://play-lh.googleusercontent.com/b9ciFqaHv7Uk6it_sxIbsWtZJiBPmZMa14-rBbz7xr9T3zc1wvBnMXcAy7ZTNBSHRNA')
@@ -418,16 +442,24 @@
         gam('color match game', 'https://color.method.ac/', 80, 'https://cdn.vox-cdn.com/thumbor/oO8nXd0jZWDAAdTMxTcKqrOaNNE=/0x0:793x450/1400x1400/filters:focal(396x225:397x226)/cdn.vox-cdn.com/uploads/chorus_asset/file/13907004/color.1419964694.jpg')
         gam('cookie clicker', 'https://eli-schwartz.github.io/cookieclicker/', 80, 'https://assets-prd.ignimgs.com/2022/11/30/cookieclicker-1669850660953.jpg')
         gam("chrome dino game", 'https://trex-runner.com/', 80, 'https://play-lh.googleusercontent.com/iiIJq5JmLFYNI1bVz4IBHyoXs508JcEzHhOgau69bnveF9Wat51-ax9LMPVOlneKwqg')
+        gam('Drift3', 'https://fivenightsatfreddys3.com/drift-3', 80, 'https://fivenightsatfreddys3.com/upload/cache/upload/imgs/2-m240x240.png')
         gam('drive mad', 'https://www.drivemad.com/', '80', 'https://images.sftcdn.net/images/t_app-icon-m/p/236ba3fd-fcb7-4aaf-9e8d-586004294e06/201633562/drive-mad-original-game-qcx-logo')
         gam('doodle baseball', 'https://doodlebaseball.io/', 80, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPNFvUztUxfIwJRg_4CBaLNaqZoIctTexCog&s')
         gam("drive mad gmaes", 'https://drivemad.me/', 80, 'https://img.poki.com/cdn-cgi/image/quality=78,width=314,height=314,fit=cover,f=auto/f8a2160e52333ee0d44ec19e8ca65139.png')
         gam('eggy car', 'https://eggy-car.github.io/', 80, 'https://media.shortverse.com/media/film/e632910ec71598311b5d4e37bcb8a03f/1x6-W10=-53ba8d0ff0c649c1c47a78e77cd654a3.png')
         gam('fluid sim', 'https://paveldogreat.github.io/WebGL-Fluid-Simulation/', 80, 'https://paveldogreat.github.io/WebGL-Fluid-Simulation/logo.png')
         gam('Fly or Die!', 'https://evoworld.io/', 80, 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTnrIM9jRV_M7rz0ujL1-VVN5fAU1t4ZaW_7W5ed6rwZdmouwmy2IZQk5B3dlVZQCmR06QY')
+        gam('FNAF(Five nights At Freddys)', 'https://fivenightsatfreddys3.com/', 80, 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQG__cNJtgdCMUV0YyWLjqGkUFkZxCwLRkuh6wA9WhJnExsob923wzvfv9fpcKMJkDkdd_4')
+        gam('Fnaf2', 'https://fivenightsatfreddys3.com/five-nights-at-freddys-2', 80, 'https://fivenightsatfreddys3.com/upload/cache/upload/imgs/unnamed-2-m101x101.png')
+        gam('Fnaf3', 'https://fivenightsatfreddys3.com/five-nights-at-freddys-3', 80, 'https://fivenightsatfreddys3.com/upload/cache/upload/imgs/images-12-m101x101.jpg')
+        gam('Fnaf4', 'https://fivenightsatfreddys3.com/five-nights-at-freddys-4', 80, 'https://fivenightsatfreddys3.com/upload/cache/upload/imgs/five-nights-at-freddys-4-3-m101x101.jpg')
+        gam('sisters location', 'https://fivenightsatfreddys3.com/five-nights-at-freddys-sister-location', 80, 'https://fivenightsatfreddys3.com/upload/cache/upload/imgs/19388c9ff528bfad4e1528a79e97daa8-m101x101.png')
+        gam('aftons nightmare', 'https://fivenightsatfreddys3.com/aftons-nightmare', 80, 'https://fivenightsatfreddys3.com/upload/cache/upload/imgs/1536264246_five-nights-at-freddys-aftons-nightmare-m240x240.png')
         gam('freeze nova', 'https://unblocked-games.s3.amazonaws.com/index.html', 80, 'https://unblocked-games.s3.amazonaws.com/media/posts/578/freezenova-clicker.webp')
         gam('funny games', 'https://FunnyGames.org', 80, 'https://www.funnygames.org/images/placeholders/thumb@2x.png')
         gam('geometry spot', 'https://geometryspot.com/', 80, 'https://images.crunchbase.com/image/upload/c_pad,f_auto,q_auto:eco,dpr_1/q9bk5lgslgnu6o92nwzj')
         gam('garticphone', 'https://garticphone.com/', 80, 'https://cdn-1.webcatalog.io/catalog/gartic-phone/gartic-phone-icon-filled-256.png?v=1714774459562')
+        gam('Granny', 'https://fivenightsatfreddys3.com/granny', 80, 'https://fivenightsatfreddys3.com/upload/cache/upload/imgs/unnamed-m101x101.png')
         gam('grindcraft', 'https://grindcraft.fbrq.io/grindcraft/index.html', 80, 'https://image.winudf.com/v2/image/Y29tLnNlcnZlcnNtYW5hZ2VyLnRvX2ljb25fMF9kYWUyZTE0Nw/icon.png?fakeurl=1&h=240&type=webp')
         gam('happy wheels', 'https://fivenightsatfreddys3.com/happy-wheels', 80, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ5pA3QwEBa-swTdKAtnSNNRZwtDA4K28ehw&s')
         gam('idle breakout', 'https://idle-breakout.github.io/', 80, 'https://play-lh.googleusercontent.com/e5jzYTn7Mjh9Ghn-DFpVedkOlRfSOyCS2AFgXdTrADIuuUbjx6vP6r_YOM2j5m7uLQ')
@@ -451,6 +483,16 @@
         gam('territorial', 'https://territorial.io/', 80, "https://backroomsgame.io/cache/data/image/game/territorialio-f150x150.png")
         gam('Tiny cube Big tower', 'https://www.greatmathgame.com/games/big-tower-tiny-square/', 80, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz6o7Y_r1bAySFVpxiOO0rBprpbD8PnPQY2g&s')
         gam('useless websites', 'https://www.google.com/url?q=https%3A%2F%2Fwww.the-useless.website%2F&sa=D&sntz=1&usg=AOvVaw24-GZnYRMrIkRR0SogwVK9', 80, 'https://www.pcsteps.com/wp-content/uploads/2017/07/Useless-Websites_07.png');
+        gam('vex chalenges', 'https://www.gameszap.com/game/20451/vex-challenges.html', 80, 'https://www.gameszap.com/files/img/vex-challenges-1685539753.jpg')
+        gam('vex', 'https://www.gameszap.com/game/6090/vex.html', 80, 'https://www.numuki.com/game/img/vex-4446.jpg')
+        gam('vex2', 'https://www.gameszap.com/game/6095/vex-2.html', 80, 'https://www.gameszap.com/files/img/vex-2-1508316943.jpg')
+        gam('vex3', 'https://www.gameszap.com/game/6101/vex-3.html', 80, 'https://yepicdn.com/system/static/thumbs/big_tile_thumb/1811/thumb300_vex-3-static.jpg?1492007177')
+        gam('vex4', 'https://www.gameszap.com/game/11416/vex-4.html', 80, 'https://www.gameszap.com/files/img/vex-4-1539696711.jpg')
+        gam('vex5', 'https://www.gameszap.com/game/16765/vex-5.html', 80, 'https://www.gameszap.com/files/img/vex-5-1605963496.jpg')
+        gam('vex6', 'https://www.gameszap.com/game/17848/vex-6.html', 80, 'https://www.gameszap.com/files/img/vex-6-1634844542.jpg')
+        gam('vex7', 'https://www.gameszap.com/game/19483/vex-7.html', 80, 'https://www.gameszap.com/files/img/vex-7-1666978447.jpg')
+        gam('vex3 xmaz', 'https://www.gameszap.com/game/21120/vex-3-xmas.html', 80, 'https://www.gameszap.com/files/img/vex-3-xmas-1699795269.jpg')
+        gam('vex8', 'https://www.gameszap.com/files/img/vex-8-1697621180.jpg', 80, 'https://www.gameszap.com/files/img/vex-8-1697621180.jpg')
         gam('1v1 lol', 'https://1v1.lol/', 80, 'https://cdn-bgp.bluestacks.com/BGP/us/gametiles_lol.onevone.jpg')
         gam('warzone(map stratigie game)', 'https://warzone.com', 80, 'https://play-lh.googleusercontent.com/6Zg2dz2eaBjEh67ySPtZarmWrgQkurdyel8VLPGB-YxaoeK_IERwDxgJdVZjSjjFk6w')
         gamhtml('weapon addon sandbloxles', 'https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/main/html%20game/weapons%20addon%20sandbloxles', 80, 'https://img.icons8.com/?size=512&id=QgiVYDIaXkWE&format=png')
@@ -458,3 +500,5 @@
 </body>
 
 </html>
+index.html
+Displaying index.html.
