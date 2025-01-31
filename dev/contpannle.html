@@ -53,10 +53,9 @@
                 navigator.clipboard.writeText(nav);
             }
             function ifrmaetest() {
-                let popupContent = prompt("url:")
-                var popupWindow = window.open("about:blank", "targe=_blank", "");
-                    popupWindow.document.write('<iframe src="'+popupContent+'" style="position:fixed; top:0px; left:0px; bottom:0px; right:0px;  border:none; margin:0; padding:0; overflow:hidden; z-index:999999; width: 100%; height: 100%;"></iframe>');
-        
+                let t = document.createElement("iframe")
+                t.src = prompt("")
+                document.body.appendChild(t)
             }
         </script>
     </body>
