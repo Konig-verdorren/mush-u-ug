@@ -87,11 +87,13 @@
             filter: hue-rotate(100deg);
             margin: 13.5;
         }
-        #popup{
+        
+        #popup {
             display: flex;
             justify-content: center;
             align-items: center;
         }
+        
         #anoun {
             bottom: 0px;
             margin: 15;
@@ -377,6 +379,37 @@
             popup("it is", "these are important to make sure u dont get caught so the website stays up longer and u dont get in trouble", 15)
             popup("pls do", "pls read these", 50);
             localStorage.popup = true;
+        } else if (localStorage.helpUs == null) {
+            let pop = document.createElement('div');
+            pop.style.backgroundColor = "white";
+            pop.style.borderRadius = "20px"
+            pop.style.width = "700px";
+            pop.style.height = "400px";
+            pop.id = "hu";
+            pop.style.margin = "15px"
+            pop.style.position = "absolute";
+            pop.style.left = "0";
+            pop.style.top = "0";
+            pop.innerText = "_" + "WE NEED YOU";
+
+            let tex = document.createElement('a');
+            tex.innerText = "we need more games u can help by gooing to our form in the bottom left";
+            tex.style.fontSize = "70px";
+            tex.style.position = "absolute";
+            tex.style.left = "10px";
+            tex.style.top = "50px";
+            pop.appendChild(tex);
+
+            let xbox = document.createElement('a');
+            xbox.style.backgroundColor = "red";
+            xbox.style.position = "absolute";
+            xbox.innerText = "X";
+            xbox.style.cursor = "pointer";
+            xbox.style.right = "5px";
+            xbox.onclick = () => document.body.removeChild(pop);
+            pop.appendChild(xbox);
+            document.body.appendChild(pop);
+            localStorage.helpUs = null
         }
     </script>
     <!---------key binds---------->
@@ -484,5 +517,4 @@
 </body>
 
 </html>
-index.html
-Displaying index.html.
+<rizz class="org"></rizz>
