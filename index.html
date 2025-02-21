@@ -437,6 +437,67 @@
             const keyName = event.key;
             if (event.altKey && event.key === "\\") {
                 popup("dev", "u have opend develepor tools", 20)
+                let t = document.createElement('img');
+                t.width = 83
+                t.height = 83
+                t.style.borderRadius = "35px";
+                t.style.margin = "10px"
+                t.style.cursor = "pointer"
+                t.id = "gam"
+                t.innerHTML = "iframe test";
+                t.title = "iframe test";
+                t.onclick = function() {
+                    op();
+                };
+                document.body.appendChild(t);
+
+                function op() {
+                    popupWindow = window.open("about:blank", "targe=_blank", "");
+                    popupWindow.document.write(`
+                    <link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/4/45/White_box_55x90.png">
+                    <title>‎</title>
+                    <body>
+                    <\/body>
+                    <style>
+                        iframe {
+                            position: fixed;
+                            top: 0px;
+                            left: 0px;
+                            bottom: 0px;
+                            right: 0px;
+                            border: none;
+                            margin: 0;
+                            padding: 0;
+                            overflow: hidden;
+                            z-index: 999999;
+                            width: 99.5%;
+                            height: 100%;
+                        }
+                        </style>
+                    <script> 
+                        function iframetest() {
+                            let t = document.createElement("iframe")
+                            t.src = prompt("")
+                            t.id = "t"
+                            document.body.appendChild(t)
+                        }
+                        document.addEventListener("keydown", (event) => {
+                            const keyName = event.key;
+                            if (event.altKey && event.key === "c") {
+                                iframetest()
+                            }
+                        })
+                        document.addEventListener("keydown",(event) => {const keyName = event.key;if (event.altKey && event.key === "z") {window.location.replace("https://classroom.google.com/w/NTIzNDc0ODE5ODg4/t/all");return;}})
+                        let til = prompt("what do you want the title to be?");
+                        document.title = til;
+
+                        document.addEventListener("keydown",(event) => {const keyName = event.key;if (event.altKey && event.key === "x") 
+                        {
+                            til = prompt("new title")
+                            document.title = til;}})
+                        iframetest()
+                    <\/script>`);
+                }
                 gamhtml("contpannle for L.I.T testing", "https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/refs/heads/main/dev/contpannle.html", 80, "https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/main/dev/dev_imgs/contpannle.png")
                 gamhtml("update request tools", "https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/refs/heads/main/dev/ur.html", 80, "https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/main/dev/dev_imgs/ur.png")
             }
