@@ -375,11 +375,6 @@
             document.body.appendChild(pop);
         }
         if (localStorage.popup == null) {
-            popup("controls", "alt+Z switches your tab to google classroom, alt+X allows you to change tab name wich only works on the aboutblanks, alt+H for more info.", 15)
-            popup("it is", "these are important to make sure u dont get caught so the website stays up longer and u dont get in trouble", 15)
-            popup("pls do", "pls read these", 50);
-            localStorage.popup = true;
-        } else if (localStorage.helpUs == null) {
             let pop = document.createElement('div');
             pop.style.backgroundColor = "white";
             pop.style.borderRadius = "20px"
@@ -393,8 +388,8 @@
             pop.innerText = "_" + "WE NEED YOU";
 
             let tex = document.createElement('a');
-            tex.innerText = "we need more games u can help by going to our form in the bottom left";
-            tex.style.fontSize = "70px";
+            tex.innerText = "We need more games for the site and we need u to add input by going to the forms in the bottom left and telling us what game we need to add";
+            tex.style.fontSize = "55px";
             tex.style.position = "absolute";
             tex.style.left = "10px";
             tex.style.top = "50px";
@@ -409,7 +404,10 @@
             xbox.onclick = () => document.body.removeChild(pop);
             pop.appendChild(xbox);
             document.body.appendChild(pop);
-            localStorage.helpUs = null
+            popup("controls", "alt+Z switches your tab to google classroom, alt+X allows you to change tab name wich only works on the aboutblanks, alt+H for more info.", 15)
+            popup("it is", "these are important to make sure u dont get caught so the website stays up longer and u dont get in trouble", 15)
+            popup("pls do", "pls read these", 50);
+            localStorage.popup = true;
         }
     </script>
     <!---------key binds---------->
@@ -545,7 +543,6 @@
         gam('idle breakout', 'https://idle-breakout.github.io/', 80, 'https://play-lh.googleusercontent.com/e5jzYTn7Mjh9Ghn-DFpVedkOlRfSOyCS2AFgXdTrADIuuUbjx6vP6r_YOM2j5m7uLQ')
         gam('inna woods', 'https://innawoods.net/', 80, 'https://androidhappy.ru/uploads/posts/2023-07/1689797463_12-1.jpg')
         gam('moto x3m', 'https://moto-x3m.io/', 80, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZt7zJ07-lrp3VuoDXAhK8i7mPyVBO9hhoy0bvgZMm1WrVoMCOh1di0nMbrXbb2xfh9L8&usqp=CAU')
-        gam('neal.fun', 'https://neal.fun/', 80, 'https://static.gameloop.com/img/bd5a03e397e1a58d5b4a0643b5b5d130.png?imageMogr2/thumbnail/172.8x172.8/format/webp')
         gam('plinko', 'https://plinko-web-game.netlify.app/', 80, 'https://img.freepik.com/premium-photo/vibrant-plinko-game-banner-with-colorful-elements_886588-41855.jpg')
         gam('poker', 'https://www.247freepoker.com/', 80, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo9s8vcgkgu9gTxxlg4-2KVnIXDk_M_jZxcg&s')
         gam('black jack', 'https://www.247blackjack.com/', 80, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFqcVDZ34RK-LNgg5ONXon7q4qRATEQdPlDA&s')
@@ -553,8 +550,8 @@
         gam('Retro Bawl', 'https://retrobowl25.com/', 80, 'https://img.poki-cdn.com/cdn-cgi/image/quality=78,width=314,height=314,fit=cover,f=auto/d98547374c4129bf441b754d495e41aa.png')
         gam('run', 'https://lekug.github.io/tn6pS9dCf37xAhkJv/', 80, 'https://img.poki-cdn.com/cdn-cgi/image/quality=78,width=314,height=314,fit=cover,f=auto/d3c19e9b-9b7b-4a54-9cb5-6188a5bd7d3b.png')
         gam('sand bloxels', 'https://sandboxels.r74n.com/', 80, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8yVbwYPNvdQCQjQFavCp8TsmzaPK6azE-TQ&s')
-        gam('snow rider 3d', 'https://snow-rider-3d.github.io/', 80, 'https://www.merlot.org/merlot/getMaterialImage.htm?id=773417944')
-        gam('slop', 'https://slope2.online/', 80, 'https://slope-game.github.io/rungame/slope/logo.png')
+        gam('snow rider 3d', 'https://snow-rider.io/', 80, 'https://www.merlot.org/merlot/getMaterialImage.htm?id=773417944')
+        gam('slop', 'https://slopegameio.github.io', 80, 'https://slope-game.github.io/rungame/slope/logo.png')
         gam('slots', 'https://www.247slots.org/', 80, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK4lPZ48KGmN6NxR9uZpcocC6PS1aTEFOkNQ&s')
         gam('super hot', 'https://www.crazygames.com/embed/time-shooter', 80, 'https://images.crazygames.com/time-shooter/20221206150331/time-shooter-cover?auto=format%2Ccompress&q=75&cs=strip&ch=DPR&w=461')
         gam('super hot 2', 'https://www.crazygames.com/embed/time-shooter-2', 80, 'https://images.crazygames.com/time-shooter-2_16x9/20241113040556/time-shooter-2_16x9-cover?auto=format%2Ccompress&q=75&cs=strip&ch=DPR&w=461')
@@ -563,16 +560,6 @@
         gam('territorial', 'https://territorial.io/', 80, "https://backroomsgame.io/cache/data/image/game/territorialio-f150x150.png")
         gam('Tiny cube Big tower', 'https://www.greatmathgame.com/games/big-tower-tiny-square/', 80, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz6o7Y_r1bAySFVpxiOO0rBprpbD8PnPQY2g&s')
         gam('useless websites', 'https://www.google.com/url?q=https%3A%2F%2Fwww.the-useless.website%2F&sa=D&sntz=1&usg=AOvVaw24-GZnYRMrIkRR0SogwVK9', 80, 'https://www.pcsteps.com/wp-content/uploads/2017/07/Useless-Websites_07.png');
-        gam('vex chalenges', 'https://www.gameszap.com/game/20451/vex-challenges.html', 80, 'https://www.gameszap.com/files/img/vex-challenges-1685539753.jpg')
-        gam('vex', 'https://www.gameszap.com/game/6090/vex.html', 80, 'https://www.numuki.com/game/img/vex-4446.jpg')
-        gam('vex2', 'https://www.gameszap.com/game/6095/vex-2.html', 80, 'https://www.gameszap.com/files/img/vex-2-1508316943.jpg')
-        gam('vex3', 'https://www.gameszap.com/game/6101/vex-3.html', 80, 'https://yepicdn.com/system/static/thumbs/big_tile_thumb/1811/thumb300_vex-3-static.jpg?1492007177')
-        gam('vex4', 'https://www.gameszap.com/game/11416/vex-4.html', 80, 'https://www.gameszap.com/files/img/vex-4-1539696711.jpg')
-        gam('vex5', 'https://www.gameszap.com/game/16765/vex-5.html', 80, 'https://www.gameszap.com/files/img/vex-5-1605963496.jpg')
-        gam('vex6', 'https://www.gameszap.com/game/17848/vex-6.html', 80, 'https://www.gameszap.com/files/img/vex-6-1634844542.jpg')
-        gam('vex7', 'https://www.gameszap.com/game/19483/vex-7.html', 80, 'https://www.gameszap.com/files/img/vex-7-1666978447.jpg')
-        gam('vex3 xmaz', 'https://www.gameszap.com/game/21120/vex-3-xmas.html', 80, 'https://www.gameszap.com/files/img/vex-3-xmas-1699795269.jpg')
-        gam('vex8', 'https://www.gameszap.com/files/img/vex-8-1697621180.jpg', 80, 'https://www.gameszap.com/files/img/vex-8-1697621180.jpg')
         gam('1v1 lol', 'https://1v1.lol/', 80, 'https://cdn-bgp.bluestacks.com/BGP/us/gametiles_lol.onevone.jpg')
         gam('warzone(map stratigie game)', 'https://warzone.com', 80, 'https://play-lh.googleusercontent.com/6Zg2dz2eaBjEh67ySPtZarmWrgQkurdyel8VLPGB-YxaoeK_IERwDxgJdVZjSjjFk6w')
         gamhtml('weapon addon sandbloxles', 'https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/main/html%20game/weapons%20addon%20sandbloxles', 80, 'https://img.icons8.com/?size=512&id=QgiVYDIaXkWE&format=png')
