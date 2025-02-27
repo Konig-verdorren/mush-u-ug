@@ -20,10 +20,74 @@
     </script>
     <!---------css style-------->
     <style>
+        /* Cool infinite background scrolling animation.
+        * Twitter: @kootoopas
+        */
+        /* Background data (Original source: https://subtlepatterns.com/grid-me/) */
+        /* Animations */
+        /* im bad with css so robery :3*/
+        
+        @-webkit-keyframes bg-scrolling-reverse {
+            100% {
+                background-position: 50px 50px;
+            }
+        }
+        
+        @-moz-keyframes bg-scrolling-reverse {
+            100% {
+                background-position: 50px 50px;
+            }
+        }
+        
+        @-o-keyframes bg-scrolling-reverse {
+            100% {
+                background-position: 50px 50px;
+            }
+        }
+        
+        @keyframes bg-scrolling-reverse {
+            100% {
+                background-position: 50px 50px;
+            }
+        }
+        
+        @-webkit-keyframes bg-scrolling {
+            0% {
+                background-position: 50px 50px;
+            }
+        }
+        
+        @-moz-keyframes bg-scrolling {
+            0% {
+                background-position: 50px 50px;
+            }
+        }
+        
+        @-o-keyframes bg-scrolling {
+            0% {
+                background-position: 50px 50px;
+            }
+        }
+        
+        @keyframes bg-scrolling {
+            0% {
+                background-position: 50px 50px;
+            }
+        }
+        /* Main styles */
+        
         body {
-            background: linear-gradient(-45deg, );
-            background-size: 400% 400%;
-            animation: gradient 60s ease infinite;
+            color: #000000;
+            /* img size is 50x50 */
+            background: url("https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/refs/heads/main/imgs/background.png") repeat 0 0;
+            -webkit-animation: bg-scrolling-reverse 2s infinite;
+            -moz-animation: bg-scrolling-reverse 2s infinite;
+            -o-animation: bg-scrolling-reverse 2s infinite;
+            animation: bg-scrolling-reverse 2s infinite;
+            -webkit-animation-timing-function: linear;
+            -moz-animation-timing-function: linear;
+            -o-animation-timing-function: linear;
+            animation-timing-function: linear;
         }
         
         @keyframes gradient {
@@ -37,8 +101,10 @@
                 background-position: 0% 50%;
             }
         }
+        /* im keeping this because it could be usful later */
         
         #toptitle {
+            order: 5;
             font-size: 100px;
             color: rgb(0, 0, 0);
             border-radius: 13px;
@@ -48,6 +114,7 @@
         }
         
         #taskbar {
+            order: 3;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -60,15 +127,13 @@
             width: 99.5%;
             margin: 3px;
             height: 60px;
-            background-image: radial-gradient(rgb(0, 0, 43), black);
-            border-radius: 30px;
-        }
-        
-        #taskbar:hover {
-            background-image: radial-gradient(black, rgb(0, 0, 43));
+            background-size: 100%, 100%;
+            background-image: radial-gradient(darkslategray, black);
+            border-radius: 30px
         }
         
         #forms {
+            order: 4;
             position: fixed;
             bottom: 0px;
             margin: 15;
@@ -89,12 +154,14 @@
         }
         
         #popup {
+            order: 100;
             display: flex;
             justify-content: center;
             align-items: center;
         }
         
         #anoun {
+            order: 4;
             bottom: 0px;
             margin: 15;
             position: fixed;
@@ -102,8 +169,18 @@
             width: 40px;
         }
         
+        #gam {
+            width: 83;
+            height: 83;
+            border-radius: 25px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        
         #gam:hover {
-            filter: grayscale(100);
+            width: 93;
+            height: 93;
+            margin: 5;
         }
     </style>
 </head>
@@ -117,19 +194,10 @@
     </div>
     <!--------script style-------->
     <script>
-        let ran = Math.floor(Math.random() * 3)
         let toptitle = document.getElementById("toptitle");
         toptitle.style.backgroundImage = "linear-gradient(rgb(255, 255, 255),rgb(0,0,0))";
         const today = new Date();
         const month = today.getMonth();
-
-        if (ran == 0) {
-            document.body.style.backgroundImage = "linear-gradient(-45deg,#f75488,black,#f786aa,black,#3072db,black,#012081,black)"
-        } else if (ran == 1) {
-            document.body.style.backgroundImage = "linear-gradient(-45deg,#4028ad,black,#ad30c9,black,#eb21ab)"
-        } else {
-            document.body.style.backgroundImage = "linear-gradient(-45deg,#1cbae6,black,#ffe019,black,#f7287e,black)"
-        }
 
         function openAnoun() {
             popupWindow = window.open("about:blank", "targe=_blank", "");
@@ -279,11 +347,6 @@
         function gam(whatgam, url, size, imagelink) {
             let t = document.createElement('img');
             t.src = imagelink;
-            t.width = 83
-            t.height = 83
-            t.style.borderRadius = "35px";
-            t.style.margin = "10px"
-            t.style.cursor = "pointer"
             t.id = "gam"
             t.innerHTML = whatgam;
             t.title = whatgam;
@@ -316,10 +379,6 @@
         function gamhtml(title, githuburl, size, imglink) {
             let t = document.createElement('img');
             t.src = imglink;
-            t.width = 83
-            t.height = 83
-            t.style.borderRadius = "35px";
-            t.style.margin = "10px"
             t.innerHTML = title;
             t.title = title;
             t.id = "gam"
@@ -436,11 +495,7 @@
             if (event.altKey && event.key === "\\") {
                 popup("dev", "u have opend develepor tools", 20)
                 let t = document.createElement('img');
-                t.width = 83
-                t.height = 83
-                t.style.borderRadius = "35px";
-                t.style.margin = "10px"
-                t.style.cursor = "pointer"
+                t.src = "https://raw.githubusercontent.com/Konig-verdorren/mush-u-ug/refs/heads/main/dev/dev_imgs/iframe.png"
                 t.id = "gam"
                 t.innerHTML = "iframe test";
                 t.title = "iframe test";
@@ -475,7 +530,7 @@
                     <script> 
                         function iframetest() {
                             let t = document.createElement("iframe")
-                            t.src = prompt("")
+                            t.src = prompt("url$")
                             t.id = "t"
                             document.body.appendChild(t)
                         }
@@ -551,7 +606,7 @@
         gam('run', 'https://lekug.github.io/tn6pS9dCf37xAhkJv/', 80, 'https://img.poki-cdn.com/cdn-cgi/image/quality=78,width=314,height=314,fit=cover,f=auto/d3c19e9b-9b7b-4a54-9cb5-6188a5bd7d3b.png')
         gam('sand bloxels', 'https://sandboxels.r74n.com/', 80, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8yVbwYPNvdQCQjQFavCp8TsmzaPK6azE-TQ&s')
         gam('snow rider 3d', 'https://snow-rider.io/', 80, 'https://www.merlot.org/merlot/getMaterialImage.htm?id=773417944')
-        gam('slop', 'https://slopegameio.github.io', 80, 'https://slope-game.github.io/rungame/slope/logo.png')
+        gam('slop', 'https://slope2.online/', 80, 'https://slope-game.github.io/rungame/slope/logo.png')
         gam('slots', 'https://www.247slots.org/', 80, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK4lPZ48KGmN6NxR9uZpcocC6PS1aTEFOkNQ&s')
         gam('super hot', 'https://www.crazygames.com/embed/time-shooter', 80, 'https://images.crazygames.com/time-shooter/20221206150331/time-shooter-cover?auto=format%2Ccompress&q=75&cs=strip&ch=DPR&w=461')
         gam('super hot 2', 'https://www.crazygames.com/embed/time-shooter-2', 80, 'https://images.crazygames.com/time-shooter-2_16x9/20241113040556/time-shooter-2_16x9-cover?auto=format%2Ccompress&q=75&cs=strip&ch=DPR&w=461')
